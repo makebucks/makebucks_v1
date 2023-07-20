@@ -114,8 +114,9 @@
 
 .brand_logo{
   position: absolute;
-  top: 3rem;
-  height: 2rem;
+    top: 3rem;
+    height: 2rem;
+    width: 3rem;
 }
 .brand_logo img{
   width: 100%;
@@ -208,10 +209,39 @@ img{
   color: #fff;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 460px) {
+  .makebucks .makebucks_header p {
+    font-size: 52px;
+  }
+  .makebucks .makebucks_header .header_tagline {
+    font-size: 10px;
+  }
+  .makebucks .makebucks_header p{
+    line-height: 100px;
+  }
+  .circle1,.circle2{
+    width: 10rem;
+    height: 10rem;
+  }
+  .makebucks_header{
+    top: 36%;
+  }
+  .email_input .subscriber_mail {
+    width: 336px;
+  }
+  .email_input .email_submit{
+    left: 8rem;
+  } 
+  .error_message {
+    right: 6rem;
+  }
+}
+
+@media screen  and (min-width: 460px) and (max-width: 600px) {
   .makebucks .makebucks_header .header_tagline {
     font-size: 12px;
-}.makebucks .makebucks_header p {
+}
+.makebucks .makebucks_header p {
   font-size: 62px;
 }
 .makebucks_header{
@@ -227,7 +257,9 @@ img{
 .email_input .email_submit{
   left: 8rem;
 } 
-
+.error_message {
+  right: 6rem;
+}
 }
 
 @media screen and (min-width: 600px) and (max-width: 768px) {
