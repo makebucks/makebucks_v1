@@ -35,7 +35,7 @@ function App() {
 
   const sendEmailData = async()=>{
     
-    if(!isinvalid && userData !=''){
+    if(!isinvalid && userData !==''){
       const response = await fetch(
         'https://makebucks-e7ddd-default-rtdb.firebaseio.com/userData.json',
         {
@@ -74,7 +74,7 @@ function App() {
         </div>
         <div className='email_input'>
             <input type='email' name='email' className='subscriber_mail' placeholder='Email address' onKeyUp={(e) => validateEmail(e)}/>
-            <button type='button' className='email_submit' id={isSuccess} onClick={sendEmailData}>{isSuccess !='hide' && <img src={successIcon} alt='success'/>}{successMessage}</button>
+            <button type='button' className='email_submit' id={isSuccess} onClick={sendEmailData}>{isSuccess !=='hide' && <img src={successIcon} alt='success'/>}{successMessage}</button>
             <div className='error_message'>
               {isinvalid && <p className='errorMsg'>{errorMessage}</p>}
             </div>
