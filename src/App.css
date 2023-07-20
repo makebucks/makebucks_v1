@@ -1,0 +1,209 @@
+.makebucks {
+  
+  height: 100vh;
+  width: 100%;
+  background-color: #333333;
+  
+  
+}
+.makebucks_header{
+  position: absolute;
+  top: 26%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .3rem;
+}
+.header_name_tag{
+  display: flex;
+  width: auto;
+  align-items: center;
+  flex-direction: column;
+  bottom: 5rem;
+  
+}
+.makebucks .makebucks_header p{
+  font-size: 96px;
+  font-weight: 600;
+  line-height: 144px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0;
+  background: linear-gradient(90deg, #FFFFFF 0%, #28A84B 54.37%, #B182FF 101.81%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.makebucks .makebucks_header .header_tagline{
+  color: #C9C9C9;
+  font-weight: 200;
+}
+
+.email_input{
+  margin-top: 10rem;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.error_message{
+  display: flex;
+    width: 8rem;
+    position: absolute;
+    right: 8rem;
+    top: 2rem;
+}
+.email_input .errorMsg{
+  padding: 1rem .5rem;
+  color: red;
+}
+
+.email_input .subscriber_mail{
+  width: 392px;
+  height: 46px;
+  border-radius: 30px;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #4e4edd;
+  padding:0 1rem ;
+  color: #C9C9C9;
+  position:absolute 
+}
+
+.email_input .email_submit{
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  width: 6rem;
+  left: 9rem;
+  top: 0;
+  border-radius: 30px;
+  padding: 8px 14px;
+  color: #fff;
+  background: linear-gradient(101.52deg, #4E4EDD 2.72%, #6D3FB9 127.14%);
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 15px;
+  cursor: pointer;
+  transition: all 5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content:center ;
+  gap: .5rem;
+}
+
+#show{
+  width: 426px;
+  padding:0.6rem ;
+  background:  linear-gradient(101.52deg, #28A84B 2.72%, #6D3FB9 127.14%);
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 15px;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+  left: 0;
+}
+.email_submit img{
+  height: 1.8rem;
+  width: 1.8rem;
+}
+
+
+.brand_logo{
+  position: absolute;
+  top: 3rem;
+  height: 2rem;
+}
+.brand_logo img{
+  width: 100%;
+  height: 100%;
+}
+
+.socialmedia_links{
+  position: absolute;
+  bottom: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.mail, .insta, .twitter, .threads{
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 100%;
+  border: 1px solid #4E4EDD;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+.card {
+  width: 100%;
+  height: 100vh;
+  border-radius: 30px;
+  padding: 0;
+  background: rgb(51, 51, 51,.2);
+  position: relative;
+  z-index: 3;
+  box-shadow: 10px 10px 70px (0,0,0,.2);
+  backdrop-filter: blur(90px);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle1, .circle2 {
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,.2);
+  backdrop-filter: blur(18px);
+  background-color: rgb(78, 78, 221,.5);
+  z-index: 1;
+}
+.circle1 {
+ 
+  width: 34rem;
+  height: 34rem;
+  top: 8%;
+  left: 13%;
+}
+.circle2 {
+  width: 34rem;
+  height: 34rem;
+  top: 46%  ;
+  right: 11%;
+}
+
+.successResponse{
+  position: absolute;
+  z-index: 99;
+  transition: all .5s ease-in;
+  top: 0.07rem;
+  left: 27rem;
+}
+
+
+
+.successMsg{
+  display: flex;
+  width: 428px;
+  height: 46px;
+  border-radius: 30px;
+  gap: 1rem;
+  background:  linear-gradient(101.52deg, #28A84B 2.72%, #6D3FB9 127.14%);
+  align-items: center;
+  justify-content: center;
+}
+
+.successMsg span{
+  color: #fff;
+}
+
