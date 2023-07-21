@@ -1,6 +1,6 @@
 import logo from './assets/logo.png';
-import mail from './assets/Vector.png';
-import insta from './assets/Vector-1.png';
+import mail from './assets/Vector-1.png';
+import insta from './assets/Vector.png';
 import twitter from './assets/Vector-2.png';
 import threads from './assets/Vector-3.png';
 import successIcon from './assets/ri-checkbox-circle-fill.png'
@@ -67,10 +67,10 @@ function App() {
           <img src={logo} className='makebucks_logo' alt='makebucks'/>
         </div>
         <div className='makebucks_header'>
-        <div className='header_name_tag'>
-          <p>Coming soon!</p>
-          <span className='header_tagline'>We are currently working hard on this page, meanwhile to get notified</span>
-          </div>  
+          <div className='header_name_tag'>
+            <p>Coming soon!</p>
+            <span className='header_tagline'>We are currently working hard on this page, meanwhile to get notified</span>
+            </div>  
         </div>
         <div className='email_input'>
             <input type='email' name='email' className='subscriber_mail' placeholder='Email address' onKeyUp={(e) => validateEmail(e)}/>
@@ -80,18 +80,18 @@ function App() {
             </div>
         </div>
         <div className='socialmedia_links'>
-            <div className='mail'>
+            <a className='mail' href='https://makebucks.in@gmail.com' target='_blank'>
               <img src={mail} className='mail_logo' alt='makebucks'/>
-            </div>
-            <div className='insta'>
+            </a>
+            <a className='insta' href='https://instagram.com/makebucks.in?igshid=MzNINGNkZWQ4Mg==' target='_blank'>
               <img src={insta} className='insta_logo' alt='insta'/>
-            </div>
-            <div className='twitter'>
+            </a>
+            <a className='twitter' >
               <img src={twitter} className='twitter_logo' alt='twitter'/>
-            </div>
-            <div className='threads'>
+            </a>
+            <a className='threads' href='https://www.threads.net/@makebucks.in' target='_blank'>
               <img src={threads} className='threads_logo' alt='threads'/>
-            </div>
+            </a>
         </div>
         
       </div>
