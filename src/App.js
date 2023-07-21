@@ -86,7 +86,7 @@ function App() {
             <a className='insta' href='https://instagram.com/makebucks.in?igshid=MzNINGNkZWQ4Mg=='>
               <img src={insta} className='insta_logo' alt='insta'/>
             </a>
-            <a className='twitter' >
+            <a className='twitter' href='https://twitter.com'>
               <img src={twitter} className='twitter_logo' alt='twitter'/>
             </a>
             <a className='threads' href='https://www.threads.net/@makebucks.in'>
