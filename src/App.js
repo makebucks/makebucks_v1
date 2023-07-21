@@ -80,16 +80,16 @@ function App() {
             </div>
         </div>
         <div className='socialmedia_links'>
-            <a className='mail' href='https://makebucks.in@gmail.com' target='_blank' rel='noreference'>
+            <a className='mail' href='https://makebucks.in@gmail.com'>
               <img src={mail} className='mail_logo' alt='makebucks'/>
             </a>
-            <a className='insta' href='https://instagram.com/makebucks.in?igshid=MzNINGNkZWQ4Mg==' target='_blank' rel='noreference'>
+            <a className='insta' href='https://instagram.com/makebucks.in?igshid=MzNINGNkZWQ4Mg=='>
               <img src={insta} className='insta_logo' alt='insta'/>
             </a>
             <a className='twitter' >
               <img src={twitter} className='twitter_logo' alt='twitter'/>
             </a>
-            <a className='threads' href='https://www.threads.net/@makebucks.in' target='_blank' rel='noreference'>
+            <a className='threads' href='https://www.threads.net/@makebucks.in'>
               <img src={threads} className='threads_logo' alt='threads'/>
             </a>
         </div>
