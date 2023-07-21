@@ -16,7 +16,7 @@ function App() {
   const validateEmail = (e) => {
     
     let email = e.target.value;
-    console.log(email)
+
     const regEx = /[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,8}(.[a-z{2,8}])?/g;
     setTimeout(() => {
       if(regEx.test(email)){
