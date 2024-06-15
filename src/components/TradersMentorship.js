@@ -10,11 +10,12 @@ import { AiOutlineRight } from "react-icons/ai";
 import recordIcon from "../img/Video icon blue.png";
 import Description from "./Description";
 import { Link } from "react-scroll";
+import recorded from "../img/live icon.png";
 
 const TradersMentorship = () => {
   const [value, setValue] = useState("");
-  const [courseactive, setCourseActive] = useState(true);
-  const [descactive, setDescactive] = useState(false);
+  const [foundation, setFoundation] = useState(true);
+  const [fando, setFando] = useState(false);
   const showModule = (val) => {
     if (value === val) {
       setValue(() => {
@@ -27,25 +28,24 @@ const TradersMentorship = () => {
     });
   };
   const showContents = (val) => {
-    if (val === "course" && !courseactive) {
-      setCourseActive(true);
-      setDescactive(false);
+    if (val === "found") {
+      setFoundation(true);
+      setFando(false);
     } else {
-      if (!descactive) {
-        setDescactive(true);
-        setCourseActive(false);
-      }
+      setFando(true);
+      setFoundation(false);
     }
   };
   return (
     <>
       <StyledHeader>
         <H2>
-          Choose Our <StyledSpan> Mentorship.</StyledSpan>
+          Trading for <StyledSpan> everyone.</StyledSpan>
         </H2>
 
         <StyledPara>
-          Get onboard with us. Let’s learn and trade together.
+          We are offering you a best price, so that everyone common people can
+          learn and trade.
         </StyledPara>
       </StyledHeader>
       <StyledCardContainer>
@@ -53,58 +53,62 @@ const TradersMentorship = () => {
           <Card>
             <BackDropImg src={mentorshipBackImg} />
             <StyledButtonDiv>
-              <StyledButton>Live</StyledButton>
-              <StyledButton style={{ background: `#fff`, color: `#0A0B0F` }}>
-                Recommended
+              <StyledButton>
+                <div className="live">
+                  <Img src={recorded}></Img>
+                  Recorded
+                </div>
+              </StyledButton>
+              <StyledButton
+                style={{
+                  background: `#DBFF73
+`,
+                  color: `#0A0B0F`,
+                }}
+              >
+                Limited offer
               </StyledButton>
             </StyledButtonDiv>
-            <CardH3>Advanced Trader Program</CardH3>
+            <CardH3>Foundation of stock market</CardH3>
             <CardPara>
-              Learn everything from basic to advanced options trader.
+              Learn everything from basic to advanced equity trader.
             </CardPara>
-            <StyledCardSpan>₹ 4999</StyledCardSpan>
+            <StyledCardSpan>₹ 599</StyledCardSpan>
             <StyledAmount>
-              ₹ 3499 <STyledAmountSpan>/ Lifetime</STyledAmountSpan>
+              ₹ 299 <STyledAmountSpan>/ Lifetime</STyledAmountSpan>
             </StyledAmount>
             <StyledBlocks>
               <Img src={star}></Img>
-
               <StyledBlockP>Crafted for complete beginners</StyledBlockP>
             </StyledBlocks>
             <StyledBlocks>
               <Img src={star}></Img>
-
-              <StyledBlockP>
-                Learn Equity, Futures & Options markets
-              </StyledBlockP>
+              <StyledBlockP>Learn stock market trading - Equity</StyledBlockP>
             </StyledBlocks>
             <StyledBlocks>
               <Img src={star}></Img>
-
-              <StyledBlockP>Learn Technical analysis</StyledBlockP>
+              <StyledBlockP>Learn advanced technical analysis</StyledBlockP>
             </StyledBlocks>
             <StyledBlocks>
               <Img src={star}></Img>
-
-              <StyledBlockP>Live trading for a month</StyledBlockP>
+              <StyledBlockP>Get certification</StyledBlockP>
             </StyledBlocks>
             <StyledBlocks>
               <Img src={star}></Img>
-
-              <StyledBlockP>Premium Option selling strategy</StyledBlockP>
-            </StyledBlocks>
-            <StyledBlocks>
-              <Img src={star}></Img>
-
               <StyledBlockP>Access to our discord (Lifetime)</StyledBlockP>
             </StyledBlocks>
 
             <BottomButtons>
               <Link to="banner" smooth={true} offset={-50} duration={500}>
-                <StyledJoinBatch>Join Upcoming Batch</StyledJoinBatch>
+                <StyledJoinBatch>
+                  {" "}
+                  Enroll now <span>-&gt;</span>
+                </StyledJoinBatch>
               </Link>
               <Link to="modules" smooth={true} offset={-50} duration={500}>
-                <StyledShowModule>Show modules</StyledShowModule>
+                <StyledShowModule onClick={() => showContents("found")}>
+                  Show modules
+                </StyledShowModule>
               </Link>
             </BottomButtons>
           </Card>
@@ -113,59 +117,66 @@ const TradersMentorship = () => {
           <Card>
             <BackDropImg src={proTraderBackImg} />
             <StyledButtonDiv>
-              <StyledButton>Recorded</StyledButton>
-              <StyledButtonFill>Coming soon</StyledButtonFill>
+              <StyledButton>
+                <div className="live">
+                  <Img src={recorded}></Img>
+                  Recorded
+                </div>
+              </StyledButton>
+              <StyledButton
+                style={{
+                  background: `#DBFF73
+`,
+                  color: `#0A0B0F`,
+                }}
+              >
+                Limited offer
+              </StyledButton>
             </StyledButtonDiv>
-            <CardH3>Pro Trader Program</CardH3>
+            <CardH3>Understand about F&O</CardH3>
             <CardPara>
-              Learn how to sell options & adjustments in options.
+              Learn about F&O, & in depth option strategies to become profitable
+              trader.
             </CardPara>
-            <StyledCardSpan>₹ 2999</StyledCardSpan>
+            <StyledCardSpan>₹ 999</StyledCardSpan>
             <StyledAmount>
-              ₹ 1999 <STyledAmountSpan>/ Lifetime</STyledAmountSpan>
+              ₹ 499 <STyledAmountSpan>/ Lifetime</STyledAmountSpan>
             </StyledAmount>
-            <StyledBlocksFaded>
-              <Img src={star}></Img>
-              <BlackCover></BlackCover>
-              <StyledBlockPFaded>
-                Crafted for complete beginners
-              </StyledBlockPFaded>
-            </StyledBlocksFaded>
-            <StyledBlocksFaded>
-              <Img src={star}></Img>
-              <BlackCover></BlackCover>
-
-              <StyledBlockPFaded>
-                Learn Equity, Futures & Options markets
-              </StyledBlockPFaded>
-            </StyledBlocksFaded>
-            <StyledBlocksFaded>
-              <Img src={star}></Img>
-              <BlackCover></BlackCover>
-
-              <StyledBlockPFaded>Learn Technical analysis</StyledBlockPFaded>
-            </StyledBlocksFaded>
             <StyledBlocks>
               <Img src={star}></Img>
-
-              <StyledBlockP>Live trading for a month</StyledBlockP>
+              <StyledBlockP>Learn futures & options</StyledBlockP>
+            </StyledBlocks>
+            <StyledBlocks>
+              <Img src={star}></Img>
+              <StyledBlockP>Deep analyze of option strategies</StyledBlockP>
             </StyledBlocks>
             <StyledBlocks>
               <Img src={star}></Img>
 
-              <StyledBlockP>Premium Option selling strategy</StyledBlockP>
+              <StyledBlockP>Analyze FII & OI data’s like pro</StyledBlockP>
+            </StyledBlocks>
+            <StyledBlocks>
+              <Img src={star}></Img>
+
+              <StyledBlockP>Get certification</StyledBlockP>
             </StyledBlocks>
             <StyledBlocks>
               <Img src={star}></Img>
 
               <StyledBlockP>Access to our discord (Lifetime)</StyledBlockP>
             </StyledBlocks>
+
             <BottomButtons>
               <Link to="banner" smooth={true} offset={-50} duration={500}>
-                <StyledJoinBatch>Get access</StyledJoinBatch>
+                <StyledJoinBatch>
+                  {" "}
+                  Enroll now <span>-&gt;</span>
+                </StyledJoinBatch>
               </Link>
               <Link to="modules" smooth={true} offset={-50} duration={500}>
-                <StyledShowModule>Show modules</StyledShowModule>
+                <StyledShowModule onClick={() => showContents("fo")}>
+                  Show modules
+                </StyledShowModule>
               </Link>
             </BottomButtons>
           </Card>
@@ -173,22 +184,11 @@ const TradersMentorship = () => {
       </StyledCardContainer>
       <CourseContent>
         <ContentNav>
-          <p
-            className={courseactive ? "cactive" : "cnotactive"}
-            onClick={() => showContents("course")}
-          >
-            Course content
-          </p>
-          <p
-            className={descactive ? "cactive" : "cnotactive"}
-            onClick={() => showContents("desc")}
-          >
-            Description
-          </p>
+          <p>Course content</p>
         </ContentNav>
-        {courseactive && (
+        {foundation && (
           <CourseContents id="modules">
-            <h4>Advanced trader program</h4>
+            <h4>Foundation of stock market trading</h4>
             <AccordianSection>
               <DropDownSection
                 onClick={() => {
@@ -200,7 +200,7 @@ const TradersMentorship = () => {
                     showModule("one");
                   }}
                 >
-                  <StyledP>Introduction to Stock Market</StyledP>
+                  <StyledP>Introduction to stock market</StyledP>
                   <AiOutlineRight
                     onClick={() => {
                       showModule("one");
@@ -221,18 +221,17 @@ const TradersMentorship = () => {
                     </StyledContent>
                     <StyledContent>
                       <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Multiple players in stock market</ContentP>
+                      <ContentP>
+                        What is DEMAT account & players in the stock market
+                      </ContentP>
                     </StyledContent>
                     <StyledContent>
                       <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>
-                        Why 99% people lose money in the market
-                      </ContentP>
+                      <ContentP>How to open DEMAT & Trading account</ContentP>
                     </StyledContent>
                   </Content>
                 )}
               </DropDownSection>
-
               <DropDownSection
                 onClick={() => {
                   showModule("two");
@@ -260,35 +259,47 @@ const TradersMentorship = () => {
                   <Content>
                     <StyledContent>
                       <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Technical jargons in the stock market</ContentP>
+                      <ContentP>
+                        Introduction & Technical jargons in the market
+                      </ContentP>
                     </StyledContent>
                     <StyledContent>
                       <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Formation of candlestick and patterns</ContentP>
+                      <ContentP>Candlesticks patterns & why it works</ContentP>
                     </StyledContent>
                     <StyledContent>
                       <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Market trend and phases</ContentP>
+                      <ContentP>Supply & Demand & its importance</ContentP>
                     </StyledContent>
                     <StyledContent>
                       <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Supply and Demand</ContentP>
+                      <ContentP>Plotting Supply & Demand (live)</ContentP>
                     </StyledContent>
                     <StyledContent>
                       <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Chart patterns & Gap theory</ContentP>
+                      <ContentP>Identifying market trends & phases</ContentP>
                     </StyledContent>
                     <StyledContent>
                       <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Price action vs Indicators</ContentP>
+                      <ContentP>Gap theory & Top 6 chart patterns</ContentP>
                     </StyledContent>
                     <StyledContent>
                       <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Our 4 favorite Indicators</ContentP>
+                      <ContentP>
+                        Price action vs Indicators (Leading & Lagging)
+                      </ContentP>
                     </StyledContent>
                     <StyledContent>
                       <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Trading terminal and your first order</ContentP>
+                      <ContentP>
+                        How to select stocks for Intraday & Swing trading
+                      </ContentP>
+                    </StyledContent>
+                    <StyledContent>
+                      <RecordImg src={recordIcon}></RecordImg>
+                      <ContentP>
+                        How to place your first order & types of orders
+                      </ContentP>
                     </StyledContent>
                   </Content>
                 )}
@@ -303,7 +314,7 @@ const TradersMentorship = () => {
                     showModule("three");
                   }}
                 >
-                  <StyledP>Equities & Derivatives markets</StyledP>
+                  <StyledP>Risk management \ Money management</StyledP>
                   <AiOutlineRight
                     onClick={() => {
                       showModule("three");
@@ -314,15 +325,15 @@ const TradersMentorship = () => {
                   <Content>
                     <StyledContent>
                       <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>What are equity/Derivatives market</ContentP>
+                      <ContentP>
+                        How to manage you risk (Risk to Reward)
+                      </ContentP>
                     </StyledContent>
                     <StyledContent>
                       <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Stocks vs Indices</ContentP>
-                    </StyledContent>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Basics of Futures and Options</ContentP>
+                      <ContentP>
+                        How much win % actually you need to profitable trader
+                      </ContentP>
                     </StyledContent>
                   </Content>
                 )}
@@ -337,7 +348,7 @@ const TradersMentorship = () => {
                     showModule("four");
                   }}
                 >
-                  <StyledP>In-depth view of Options</StyledP>
+                  <StyledP>Trading psychology</StyledP>
                   <AiOutlineRight
                     onClick={() => {
                       showModule("four");
@@ -348,35 +359,58 @@ const TradersMentorship = () => {
                   <Content>
                     <StyledContent>
                       <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>What are Call and Put options</ContentP>
+                      <ContentP>Why trading psychology is important</ContentP>
                     </StyledContent>
                     <StyledContent>
                       <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Decoding option jargons</ContentP>
-                    </StyledContent>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>What are greeks</ContentP>
-                    </StyledContent>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Introduction to option chain</ContentP>
-                    </StyledContent>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Open Interest (OI) and Max Pain</ContentP>
-                    </StyledContent>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Expiry of Options</ContentP>
-                    </StyledContent>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Our 4 favorite Indicators</ContentP>
+                      <ContentP>Tips to improve trading psychology</ContentP>
                     </StyledContent>
                   </Content>
                 )}
               </DropDownSection>
+              <DropDownSection
+                onClick={() => {
+                  showModule("nine");
+                }}
+              >
+                <Module
+                  onClick={() => {
+                    showModule("nine");
+                  }}
+                >
+                  <StyledP>Bonus lecture</StyledP>
+                  <AiOutlineRight
+                    onClick={() => {
+                      showModule("nine");
+                    }}
+                  />
+                </Module>
+                {value === "nine" && (
+                  <Content>
+                    <StyledContent>
+                      <RecordImg src={recordIcon}></RecordImg>
+                      <ContentP>Tracking global stock market news</ContentP>
+                    </StyledContent>
+                    <StyledContent>
+                      <RecordImg src={recordIcon}></RecordImg>
+                      <ContentP>Intraday trading strategy </ContentP>
+                    </StyledContent>
+                    <StyledContent>
+                      <RecordImg src={recordIcon}></RecordImg>
+                      <ContentP>
+                        Recap of technical analysis (live chart)
+                      </ContentP>
+                    </StyledContent>
+                  </Content>
+                )}
+              </DropDownSection>
+            </AccordianSection>
+          </CourseContents>
+        )}
+        {fando && (
+          <CourseContents>
+            <h4>Understand about F&O</h4>
+            <AccordianSection>
               <DropDownSection
                 onClick={() => {
                   showModule("five");
@@ -387,7 +421,7 @@ const TradersMentorship = () => {
                     showModule("five");
                   }}
                 >
-                  <StyledP>Trading in Options</StyledP>
+                  <StyledP> Introduction to futures & options</StyledP>
                   <AiOutlineRight
                     onClick={() => {
                       showModule("five");
@@ -398,27 +432,15 @@ const TradersMentorship = () => {
                   <Content>
                     <StyledContent>
                       <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>What is Option Buying</ContentP>
+                      <ContentP>Overview of financial markets</ContentP>
                     </StyledContent>
                     <StyledContent>
                       <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>What is Option Selling</ContentP>
+                      <ContentP>Basics of futures & options</ContentP>
                     </StyledContent>
                     <StyledContent>
                       <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Directional & Non-Directional trading</ContentP>
-                    </StyledContent>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>What are stradles</ContentP>
-                    </StyledContent>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>What are strangles</ContentP>
-                    </StyledContent>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>What is spreads</ContentP>
+                      <ContentP>Regulatory framework</ContentP>
                     </StyledContent>
                   </Content>
                 )}
@@ -433,7 +455,7 @@ const TradersMentorship = () => {
                     showModule("six");
                   }}
                 >
-                  <StyledP>Premium Options selling strategy</StyledP>
+                  <StyledP>In depth study of futures</StyledP>
                   <AiOutlineRight
                     onClick={() => {
                       showModule("six");
@@ -444,11 +466,19 @@ const TradersMentorship = () => {
                   <Content>
                     <StyledContent>
                       <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>
-                        On this module you'll learn our premium option selling
-                        strategy & adjustments, this will give you consistent
-                        returns from the market.
-                      </ContentP>
+                      <ContentP>Fundamentals of futures contract</ContentP>
+                    </StyledContent>
+                    <StyledContent>
+                      <RecordImg src={recordIcon}></RecordImg>
+                      <ContentP>Mechanics of future trading</ContentP>
+                    </StyledContent>
+                    <StyledContent>
+                      <RecordImg src={recordIcon}></RecordImg>
+                      <ContentP>Practical examples</ContentP>
+                    </StyledContent>
+                    <StyledContent>
+                      <RecordImg src={recordIcon}></RecordImg>
+                      <ContentP>Strategies for trading futures</ContentP>
                     </StyledContent>
                   </Content>
                 )}
@@ -463,7 +493,7 @@ const TradersMentorship = () => {
                     showModule("seven");
                   }}
                 >
-                  <StyledP>Trading Live with us</StyledP>
+                  <StyledP>Comprehensive study of options</StyledP>
                   <AiOutlineRight
                     onClick={() => {
                       showModule("seven");
@@ -474,22 +504,102 @@ const TradersMentorship = () => {
                   <Content>
                     <StyledContent>
                       <RecordImg src={recordIcon}></RecordImg>
+                      <ContentP>Understanding options contract</ContentP>
+                    </StyledContent>
+                    <StyledContent>
+                      <RecordImg src={recordIcon}></RecordImg>
+                      <ContentP>Options pricing and valuation</ContentP>
+                    </StyledContent>
+                    <StyledContent>
+                      <RecordImg src={recordIcon}></RecordImg>
+                      <ContentP>Option chain and analysis</ContentP>
+                    </StyledContent>
+                    <StyledContent>
+                      <RecordImg src={recordIcon}></RecordImg>
                       <ContentP>
-                        After your course completion. You will be added to our
-                        premium discord server. Where you can trade live with
-                        us.
+                        Understanding and decoding Option greeks
                       </ContentP>
                     </StyledContent>
                   </Content>
                 )}
               </DropDownSection>
+              <DropDownSection
+                onClick={() => {
+                  showModule("eight");
+                }}
+              >
+                <Module
+                  onClick={() => {
+                    showModule("eight");
+                  }}
+                >
+                  <StyledP>Options trading strategies</StyledP>
+                  <AiOutlineRight
+                    onClick={() => {
+                      showModule("eight");
+                    }}
+                  />
+                </Module>
+                {value === "eight" && (
+                  <Content>
+                    <StyledContent>
+                      <RecordImg src={recordIcon}></RecordImg>
+                      <ContentP>Bullish strategies</ContentP>
+                    </StyledContent>
+                    <StyledContent>
+                      <RecordImg src={recordIcon}></RecordImg>
+                      <ContentP>Bearish strategies</ContentP>
+                    </StyledContent>
+                    <StyledContent>
+                      <RecordImg src={recordIcon}></RecordImg>
+                      <ContentP>Non - Directional strategies</ContentP>
+                    </StyledContent>
+                    <StyledContent>
+                      <RecordImg src={recordIcon}></RecordImg>
+                      <ContentP>Advanced options strategies</ContentP>
+                    </StyledContent>
+                  </Content>
+                )}
+              </DropDownSection>
+              <DropDownSection
+                onClick={() => {
+                  showModule("nine");
+                }}
+              >
+                <Module
+                  onClick={() => {
+                    showModule("nine");
+                  }}
+                >
+                  <StyledP>Bonus lecture</StyledP>
+                  <AiOutlineRight
+                    onClick={() => {
+                      showModule("nine");
+                    }}
+                  />
+                </Module>
+                {value === "nine" && (
+                  <Content>
+                    <StyledContent>
+                      <RecordImg src={recordIcon}></RecordImg>
+                      <ContentP>Advanced trading techniques</ContentP>
+                    </StyledContent>
+                    <StyledContent>
+                      <RecordImg src={recordIcon}></RecordImg>
+                      <ContentP>Risk management strategies</ContentP>
+                    </StyledContent>
+                    <StyledContent>
+                      <RecordImg src={recordIcon}></RecordImg>
+                      <ContentP>Market analysis tools & resources</ContentP>
+                    </StyledContent>
+                    <StyledContent>
+                      <RecordImg src={recordIcon}></RecordImg>
+                      <ContentP>Case studies & real life example</ContentP>
+                    </StyledContent>
+                  </Content>
+                )}
+              </DropDownSection>
             </AccordianSection>
-          </CourseContents>
-        )}
-        {descactive && (
-          <CourseContents>
-            <h4>Advanced trader program</h4>
-            <Description />
           </CourseContents>
         )}
       </CourseContent>
@@ -695,6 +805,12 @@ const StyledButton = styled.button`
   border-radius: 50px;
   font-size: 1.4rem;
   font-weight: 500;
+  .live {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
   @media screen and (max-width: 493px) {
     font-size: 10px;
   }
@@ -906,6 +1022,10 @@ const BottomButtons = styled.div`
 const StyledJoinBatch = styled.button`
   width: 100%;
   border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 1rem;
 `;
 const StyledShowModule = styled.button`
   width: 100%;
@@ -920,6 +1040,7 @@ const CourseContent = styled.div`
   background: #fff;
   border-radius: 10px;
   flex-direction: column;
+  cursor: pointer;
   @media screen and (min-width: 768px) and (max-width: 1080px) {
     width: 80%;
   }
