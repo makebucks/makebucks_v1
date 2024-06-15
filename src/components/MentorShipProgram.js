@@ -65,9 +65,16 @@ const MentorShipProgram = () => {
             <StyledBlockP>Access to our discord (Lifetime)</StyledBlockP>
           </StyledBlocks>
           <BottomButtons>
-            <StyledJoinBatch onClick={() => navigate("/traders-mentorship")}>
-              Enroll now <span>-&gt;</span>
-            </StyledJoinBatch>
+            <a
+              className="tagmon"
+              href="https://learn.makebucks.in/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <StyledJoinBatch>
+                Enroll now <span>-&gt;</span>
+              </StyledJoinBatch>
+            </a>
             <StyledShowModule onClick={() => navigate("/traders-mentorship")}>
               Show modules
             </StyledShowModule>

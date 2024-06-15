@@ -98,12 +98,17 @@ const TradersMentorship = () => {
             </StyledBlocks>
 
             <BottomButtons>
-              <Link to="banner" smooth={true} offset={-50} duration={500}>
+              <a
+                className="tagmon"
+                href="https://learn.makebucks.in/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <StyledJoinBatch>
                   {" "}
                   Enroll now <span>-&gt;</span>
-                </StyledJoinBatch>
-              </Link>
+                </StyledJoinBatch>{" "}
+              </a>
               <Link to="modules" smooth={true} offset={-50} duration={500}>
                 <StyledShowModule onClick={() => showContents("found")}>
                   Show modules
@@ -166,12 +171,17 @@ const TradersMentorship = () => {
             </StyledBlocks>
 
             <BottomButtons>
-              <Link to="banner" smooth={true} offset={-50} duration={500}>
+              {" "}
+              <a
+                className="tagmon"
+                href="https://learn.makebucks.in/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <StyledJoinBatch>
-                  {" "}
                   Enroll now <span>-&gt;</span>
                 </StyledJoinBatch>
-              </Link>
+              </a>
               <Link to="modules" smooth={true} offset={-50} duration={500}>
                 <StyledShowModule onClick={() => showContents("fo")}>
                   Show modules
