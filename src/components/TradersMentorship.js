@@ -8,7 +8,6 @@ import mentorshipBackImg from "../img/Choose our mentroship eclipse L&R.png";
 import proTraderBackImg from "../img/pro trade card eclipse.png";
 import { AiOutlineRight } from "react-icons/ai";
 import recordIcon from "../img/Video icon blue.png";
-import Description from "./Description";
 import { Link } from "react-scroll";
 import recorded from "../img/live icon.png";
 
@@ -815,17 +814,7 @@ const StyledButton = styled.button`
     font-size: 10px;
   }
 `;
-const StyledButtonFill = styled.button`
-  border: 2px solid #bdfa3a;
-  background: #bdfa3a;
-  border-radius: 50px;
-  font-size: 1.4rem;
-  font-weight: 500;
-  @media screen and (max-width: 493px) {
-    font-size: 10px;
-  }
-  color: #000000;
-`;
+
 const Card = styled.div`
   display: flex;
   align-items: baseline;
@@ -950,28 +939,7 @@ const StyledBlocks = styled.div`
     margin-bottom: 6px;
   }
 `;
-const StyledBlocksFaded = styled.div`
-  display: flex;
-  border-radius: 40px;
-  width: 100%;
-  background: rgba(24, 29, 13);
-  padding: 1rem 0 1rem 1rem;
-  align-items: center;
-  gap: 1rem;
-  z-index: 4;
-  position: relative;
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 6px;
-  }
-`;
-const BlackCover = styled.div`
-  position: absolute;
-  width: 100%;
-  background: rgb(12, 9, 20, 0.7);
-  left: 0;
-  top: 0;
-  height: 100%;
-`;
+
 const StyledBlockP = styled.p`
   font-size: 1.5rem;
   color: #fff;
@@ -992,26 +960,7 @@ const StyledBlockP = styled.p`
     font-size: 10px;
   }
 `;
-const StyledBlockPFaded = styled.p`
-  font-size: 1.5rem;
-  color: #fff;
-  text-align: center;
-  @media screen and (max-width: 768px) {
-    font-size: 1.2rem;
-  }
-  @media screen and (max-width: 493px) {
-    font-size: 12px;
-    text-align: left;
-  }
 
-  @media screen and (min-width: 1200px) {
-    font-size: 14px;
-    text-align: left;
-  }
-  @media screen and (max-width: 350px) {
-    font-size: 10px;
-  }
-`;
 const BottomButtons = styled.div`
   display: flex;
   flex-direction: column;
