@@ -137,10 +137,10 @@ const TradersMentorship = () => {
                 Limited offer
               </StyledButton>
             </StyledButtonDiv>
-            <CardH3>Understand about F&O</CardH3>
+            <CardH3>Futures & Options trading masterclass</CardH3>
             <CardPara>
-              Learn about F&O, & in depth option strategies to become profitable
-              trader.
+              Learn about the concepts of Options buying & selling strategies to
+              generate income.
             </CardPara>
             <StyledCardSpan>₹ 999</StyledCardSpan>
             <StyledAmount>
@@ -418,7 +418,7 @@ const TradersMentorship = () => {
         )}
         {fando && (
           <CourseContents>
-            <h4>Understand about F&O</h4>
+            <h4>Futures & Options trading masterclass</h4>
             <AccordianSection>
               <DropDownSection
                 onClick={() => {
@@ -445,11 +445,11 @@ const TradersMentorship = () => {
                     </StyledContent>
                     <StyledContent>
                       <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Basics of futures & options</ContentP>
+                      <ContentP>Understanding futures</ContentP>
                     </StyledContent>
                     <StyledContent>
                       <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Regulatory framework</ContentP>
+                      <ContentP>Real life examples for futures</ContentP>
                     </StyledContent>
                   </Content>
                 )}
@@ -475,19 +475,7 @@ const TradersMentorship = () => {
                   <Content>
                     <StyledContent>
                       <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Fundamentals of futures contract</ContentP>
-                    </StyledContent>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Mechanics of future trading</ContentP>
-                    </StyledContent>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Practical examples</ContentP>
-                    </StyledContent>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Strategies for trading futures</ContentP>
+                      <ContentP>Futures in the Indian stock market</ContentP>
                     </StyledContent>
                   </Content>
                 )}
@@ -513,15 +501,19 @@ const TradersMentorship = () => {
                   <Content>
                     <StyledContent>
                       <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Understanding options contract</ContentP>
+                      <ContentP>Introduction to option contracts</ContentP>
                     </StyledContent>
                     <StyledContent>
                       <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Options pricing and valuation</ContentP>
+                      <ContentP>
+                        Real life examples for options contracts
+                      </ContentP>
                     </StyledContent>
                     <StyledContent>
                       <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Option chain and analysis</ContentP>
+                      <ContentP>
+                        In depth view of call options & put options
+                      </ContentP>
                     </StyledContent>
                     <StyledContent>
                       <RecordImg src={recordIcon}></RecordImg>
@@ -542,7 +534,7 @@ const TradersMentorship = () => {
                     showModule("eight");
                   }}
                 >
-                  <StyledP>Options trading strategies</StyledP>
+                  <StyledP>Directional Options trading strategies</StyledP>
                   <AiOutlineRight
                     onClick={() => {
                       showModule("eight");
@@ -553,19 +545,15 @@ const TradersMentorship = () => {
                   <Content>
                     <StyledContent>
                       <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Bullish strategies</ContentP>
+                      <ContentP>Option buying strategies</ContentP>
                     </StyledContent>
                     <StyledContent>
                       <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Bearish strategies</ContentP>
+                      <ContentP>Bull call spreads</ContentP>
                     </StyledContent>
                     <StyledContent>
                       <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Non - Directional strategies</ContentP>
-                    </StyledContent>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Advanced options strategies</ContentP>
+                      <ContentP>Bear put spreads</ContentP>
                     </StyledContent>
                   </Content>
                 )}
@@ -580,7 +568,10 @@ const TradersMentorship = () => {
                     showModule("nine");
                   }}
                 >
-                  <StyledP>Bonus lecture</StyledP>
+                  <StyledP>
+                    {" "}
+                    Non - Directional Options trading strategies
+                  </StyledP>
                   <AiOutlineRight
                     onClick={() => {
                       showModule("nine");
@@ -591,19 +582,75 @@ const TradersMentorship = () => {
                   <Content>
                     <StyledContent>
                       <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Advanced trading techniques</ContentP>
+                      <ContentP>
+                        Market conditions to use Long straddle
+                      </ContentP>
                     </StyledContent>
                     <StyledContent>
                       <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Risk management strategies</ContentP>
+                      <ContentP>Understanding Long strangle</ContentP>
                     </StyledContent>
                     <StyledContent>
                       <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Market analysis tools & resources</ContentP>
+                      <ContentP>
+                        Short straddle for neutral market conditions
+                      </ContentP>
                     </StyledContent>
                     <StyledContent>
                       <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Case studies & real life example</ContentP>
+                      <ContentP>
+                        Short strangle for neutral market conditions
+                      </ContentP>
+                    </StyledContent>
+                    <StyledContent>
+                      <RecordImg src={recordIcon}></RecordImg>
+                      <ContentP>Advanced short straddle with hedges</ContentP>
+                    </StyledContent>
+                    <StyledContent>
+                      <RecordImg src={recordIcon}></RecordImg>
+                      <ContentP>
+                        Eliminating the risk of short strangle with iron condor
+                      </ContentP>
+                    </StyledContent>
+                  </Content>
+                )}
+              </DropDownSection>
+              <DropDownSection
+                onClick={() => {
+                  showModule("ten");
+                }}
+              >
+                <Module
+                  onClick={() => {
+                    showModule("ten");
+                  }}
+                >
+                  <StyledP>Bonus lecture</StyledP>
+                  <AiOutlineRight
+                    onClick={() => {
+                      showModule("ten");
+                    }}
+                  />
+                </Module>
+                {value === "ten" && (
+                  <Content>
+                    <StyledContent>
+                      <RecordImg src={recordIcon}></RecordImg>
+                      <ContentP>
+                        Understanding the importance of Open Interest
+                      </ContentP>
+                    </StyledContent>
+                    <StyledContent>
+                      <RecordImg src={recordIcon}></RecordImg>
+                      <ContentP>Practical tips for successful trading</ContentP>
+                    </StyledContent>
+                    <StyledContent>
+                      <RecordImg src={recordIcon}></RecordImg>
+                      <ContentP>Conclusion</ContentP>
+                    </StyledContent>
+                    <StyledContent>
+                      <RecordImg src={recordIcon}></RecordImg>
+                      <ContentP>Bonus- Concept of short selling</ContentP>
                     </StyledContent>
                   </Content>
                 )}
@@ -612,7 +659,6 @@ const TradersMentorship = () => {
           </CourseContents>
         )}
       </CourseContent>
-      <Banner />
       <ContactUsDiv>
         <ContactUs />
       </ContactUsDiv>
@@ -828,6 +874,7 @@ const StyledButton = styled.button`
 const Card = styled.div`
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
   padding: 1rem 2rem 2rem 2rem;
   background: #0c0914;
   width: 40rem;

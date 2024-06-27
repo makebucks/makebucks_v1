@@ -271,11 +271,11 @@ const HowWeWork = () => {
                       </StyledContent>
                       <StyledContent>
                         <RecordImg src={recordIcon}></RecordImg>
-                        <ContentP>Basics of futures & options</ContentP>
+                        <ContentP>Understanding futures</ContentP>
                       </StyledContent>
                       <StyledContent>
                         <RecordImg src={recordIcon}></RecordImg>
-                        <ContentP>Regulatory framework</ContentP>
+                        <ContentP>Real life examples for futures</ContentP>
                       </StyledContent>
                     </Content>
                   )}
@@ -301,19 +301,7 @@ const HowWeWork = () => {
                     <Content>
                       <StyledContent>
                         <RecordImg src={recordIcon}></RecordImg>
-                        <ContentP>Fundamentals of futures contract</ContentP>
-                      </StyledContent>
-                      <StyledContent>
-                        <RecordImg src={recordIcon}></RecordImg>
-                        <ContentP>Mechanics of future trading</ContentP>
-                      </StyledContent>
-                      <StyledContent>
-                        <RecordImg src={recordIcon}></RecordImg>
-                        <ContentP>Practical examples</ContentP>
-                      </StyledContent>
-                      <StyledContent>
-                        <RecordImg src={recordIcon}></RecordImg>
-                        <ContentP>Strategies for trading futures</ContentP>
+                        <ContentP>Futures in the Indian stock market</ContentP>
                       </StyledContent>
                     </Content>
                   )}
@@ -339,15 +327,19 @@ const HowWeWork = () => {
                     <Content>
                       <StyledContent>
                         <RecordImg src={recordIcon}></RecordImg>
-                        <ContentP>Understanding options contract</ContentP>
+                        <ContentP>Introduction to option contracts</ContentP>
                       </StyledContent>
                       <StyledContent>
                         <RecordImg src={recordIcon}></RecordImg>
-                        <ContentP>Options pricing and valuation</ContentP>
+                        <ContentP>
+                          Real life examples for options contracts
+                        </ContentP>
                       </StyledContent>
                       <StyledContent>
                         <RecordImg src={recordIcon}></RecordImg>
-                        <ContentP>Option chain and analysis</ContentP>
+                        <ContentP>
+                          In depth view of call options & put options
+                        </ContentP>
                       </StyledContent>
                       <StyledContent>
                         <RecordImg src={recordIcon}></RecordImg>
@@ -368,7 +360,7 @@ const HowWeWork = () => {
                       showModule("eight");
                     }}
                   >
-                    <StyledP>Options trading strategies</StyledP>
+                    <StyledP>Directional Options trading strategies</StyledP>
                     <AiOutlineRight
                       onClick={() => {
                         showModule("eight");
@@ -379,19 +371,15 @@ const HowWeWork = () => {
                     <Content>
                       <StyledContent>
                         <RecordImg src={recordIcon}></RecordImg>
-                        <ContentP>Bullish strategies</ContentP>
+                        <ContentP>Option buying strategies</ContentP>
                       </StyledContent>
                       <StyledContent>
                         <RecordImg src={recordIcon}></RecordImg>
-                        <ContentP>Bearish strategies</ContentP>
+                        <ContentP>Bull call spreads</ContentP>
                       </StyledContent>
                       <StyledContent>
                         <RecordImg src={recordIcon}></RecordImg>
-                        <ContentP>Non - Directional strategies</ContentP>
-                      </StyledContent>
-                      <StyledContent>
-                        <RecordImg src={recordIcon}></RecordImg>
-                        <ContentP>Advanced options strategies</ContentP>
+                        <ContentP>Bear put spreads</ContentP>
                       </StyledContent>
                     </Content>
                   )}
@@ -406,7 +394,10 @@ const HowWeWork = () => {
                       showModule("nine");
                     }}
                   >
-                    <StyledP>Bonus lecture</StyledP>
+                    <StyledP>
+                      {" "}
+                      Non - Directional Options trading strategies
+                    </StyledP>
                     <AiOutlineRight
                       onClick={() => {
                         showModule("nine");
@@ -414,6 +405,61 @@ const HowWeWork = () => {
                     />
                   </Module>
                   {value === "nine" && (
+                    <Content>
+                      <StyledContent>
+                        <RecordImg src={recordIcon}></RecordImg>
+                        <ContentP>
+                          Market conditions to use Long straddle
+                        </ContentP>
+                      </StyledContent>
+                      <StyledContent>
+                        <RecordImg src={recordIcon}></RecordImg>
+                        <ContentP>Understanding Long strangle</ContentP>
+                      </StyledContent>
+                      <StyledContent>
+                        <RecordImg src={recordIcon}></RecordImg>
+                        <ContentP>
+                          Short straddle for neutral market conditions
+                        </ContentP>
+                      </StyledContent>
+                      <StyledContent>
+                        <RecordImg src={recordIcon}></RecordImg>
+                        <ContentP>
+                          Short strangle for neutral market conditions
+                        </ContentP>
+                      </StyledContent>
+                      <StyledContent>
+                        <RecordImg src={recordIcon}></RecordImg>
+                        <ContentP>Advanced short straddle with hedges</ContentP>
+                      </StyledContent>
+                      <StyledContent>
+                        <RecordImg src={recordIcon}></RecordImg>
+                        <ContentP>
+                          Eliminating the risk of short strangle with iron
+                          condor
+                        </ContentP>
+                      </StyledContent>
+                    </Content>
+                  )}
+                </DropDownSection>
+                <DropDownSection
+                  onClick={() => {
+                    showModule("ten");
+                  }}
+                >
+                  <Module
+                    onClick={() => {
+                      showModule("ten");
+                    }}
+                  >
+                    <StyledP>Bonus lecture</StyledP>
+                    <AiOutlineRight
+                      onClick={() => {
+                        showModule("ten");
+                      }}
+                    />
+                  </Module>
+                  {value === "ten" && (
                     <Content>
                       <StyledContent>
                         <RecordImg src={recordIcon}></RecordImg>
@@ -431,19 +477,23 @@ const HowWeWork = () => {
                       </StyledContent>
                       <StyledContent>
                         <RecordImg src={recordIcon}></RecordImg>
-                        <ContentP>Advanced trading techniques</ContentP>
+                        <ContentP>
+                          Understanding the importance of Open Interest
+                        </ContentP>
                       </StyledContent>
                       <StyledContent>
                         <RecordImg src={recordIcon}></RecordImg>
-                        <ContentP>Risk management strategies</ContentP>
+                        <ContentP>
+                          Practical tips for successful trading
+                        </ContentP>
                       </StyledContent>
                       <StyledContent>
                         <RecordImg src={recordIcon}></RecordImg>
-                        <ContentP>Market analysis tools & resources</ContentP>
+                        <ContentP>Conclusion</ContentP>
                       </StyledContent>
                       <StyledContent>
                         <RecordImg src={recordIcon}></RecordImg>
-                        <ContentP>Case studies & real life example</ContentP>
+                        <ContentP>Bonus- Concept of short selling</ContentP>
                       </StyledContent>
                     </Content>
                   )}

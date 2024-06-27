@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import star from "../img/tick icon png.png";
 import mentorshipBackImg from "../img/Choose our mentroship eclipse L&R.png";
 import { useNavigate } from "react-router-dom";
 import recorded from "../img/live icon.png";
@@ -18,65 +17,104 @@ const MentorShipProgram = () => {
         </P>
         <Card>
           <BackDropImg src={mentorshipBackImg} />
-          <StyledButtonDiv>
-            <StyledButton>
-              {" "}
-              <div className="live">
-                <Img src={recorded}></Img>
-                Recorded
-              </div>
-            </StyledButton>
-            <StyledButton
-              style={{
-                background: `#DBFF73
+          <div className="row">
+            <div className="description">
+              <CardH3>Foundation of stock market</CardH3>
+              <CardPara>
+                Learn everything from basic to advanced options trader.
+              </CardPara>
+            </div>
+            <StyledButtonDiv>
+              <StyledButton>
+                {" "}
+                <div className="live">
+                  <Img src={recorded}></Img>
+                  Recorded
+                </div>
+              </StyledButton>
+              <StyledButton
+                style={{
+                  background: `#DBFF73
 `,
-                color: `#0A0B0F`,
-              }}
-            >
-              Limited offer
-            </StyledButton>
-          </StyledButtonDiv>
-          <CardH3>Foundation of stock market</CardH3>
-          <CardPara>
-            Learn everything from basic to advanced options trader.
-          </CardPara>
-          <StyledCardSpan>₹ 5999</StyledCardSpan>
+                  color: `#0A0B0F`,
+                }}
+              >
+                Limited offer
+              </StyledButton>
+            </StyledButtonDiv>
+          </div>
+
+          <StyledCardSpan>₹ 599</StyledCardSpan>
           <StyledAmount>
             ₹ 299 <STyledAmountSpan>/ Lifetime</STyledAmountSpan>
           </StyledAmount>
-          <StyledBlocks>
-            <Img src={star}></Img>
-            <StyledBlockP>Crafted for complete beginners</StyledBlockP>
-          </StyledBlocks>
-          <StyledBlocks>
-            <Img src={star}></Img>
-            <StyledBlockP>Learn stock market trading - Equity</StyledBlockP>
-          </StyledBlocks>
-          <StyledBlocks>
-            <Img src={star}></Img>
-            <StyledBlockP>Learn advanced technical analysis</StyledBlockP>
-          </StyledBlocks>
-          <StyledBlocks>
-            <Img src={star}></Img>
-            <StyledBlockP>Get certification</StyledBlockP>
-          </StyledBlocks>
-          <StyledBlocks>
-            <Img src={star}></Img>
-            <StyledBlockP>Access to our discord (Lifetime)</StyledBlockP>
-          </StyledBlocks>
+
           <BottomButtons>
-            <a
-              className="tagmon"
-              href="https://learn.makebucks.in/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <StyledJoinBatch>
+            <StyledJoinBatch>
+              <a
+                className="tagmon"
+                href="https://learn.makebucks.in/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Enroll now <span>-&gt;</span>
-              </StyledJoinBatch>
-            </a>
+              </a>
+            </StyledJoinBatch>
+
             <StyledShowModule onClick={() => navigate("/traders-mentorship")}>
-              Show modules
+              More details
+            </StyledShowModule>
+          </BottomButtons>
+        </Card>
+        <Card>
+          <BackDropImg src={mentorshipBackImg} />
+          <div className="row">
+            <div className="description">
+              <CardH3>Futures & Options trading masterclass</CardH3>
+              <CardPara>
+                Learn about the concepts of Options buying & selling strategies
+                to generate income.
+              </CardPara>
+            </div>
+            <StyledButtonDiv>
+              <StyledButton>
+                {" "}
+                <div className="live">
+                  <Img src={recorded}></Img>
+                  Recorded
+                </div>
+              </StyledButton>
+              <StyledButton
+                style={{
+                  background: `#DBFF73
+`,
+                  color: `#0A0B0F`,
+                }}
+              >
+                Limited offer
+              </StyledButton>
+            </StyledButtonDiv>
+          </div>
+
+          <StyledCardSpan>₹ 999</StyledCardSpan>
+          <StyledAmount>
+            ₹ 499 <STyledAmountSpan>/ Lifetime</STyledAmountSpan>
+          </StyledAmount>
+
+          <BottomButtons>
+            <StyledJoinBatch>
+              <a
+                className="tagmon"
+                href="https://learn.makebucks.in/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Enroll now <span>-&gt;</span>
+              </a>
+            </StyledJoinBatch>
+
+            <StyledShowModule onClick={() => navigate("/traders-mentorship")}>
+              More details
             </StyledShowModule>
           </BottomButtons>
         </Card>
@@ -116,13 +154,16 @@ const H2 = styled.h2`
 `;
 const P = styled.p`
   font-size: 1.875rem;
-  width: 60%;
+  width: 42%;
   text-align: center;
 
   @media screen and (max-width: 460px) {
     font-size: 1.2rem;
     width: 80%;
     margin-top: 0.6rem;
+  }
+  @media screen and (min-width: 768px) {
+    width: 80%;
   }
   @media screen and (min-width: 460px) and (max-width: 768px) {
     font-size: 1.5rem;
@@ -158,33 +199,36 @@ const StyledButtonDiv = styled.div`
   display: flex;
   gap: 1rem;
   align-items: center;
-  position: absolute;
-  right: 12px;
-  top: 20px;
+  @media screen and (max-width: 620px) {
+    flex-direction: column;
+  }
 `;
 const StyledButton = styled.button`
   border: 2px solid #bdfa3a;
   background: transparent;
   border-radius: 50px;
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-weight: 500;
+  width: 100%;
   .live {
     display: flex;
     gap: 1rem;
     justify-content: center;
     align-items: center;
   }
-  @media screen and (max-width: 493px) {
-    font-size: 10px;
+  @media screen and (max-width: 450px) {
+    width: 95%;
+    font-size: 8px;
   }
 `;
 
 const Card = styled.div`
   display: flex;
   align-items: baseline;
-  padding: 1rem 2rem 2rem 2rem;
+  padding: 3rem 1rem 3rem 5rem;
   background: #0c0914;
-  width: 44rem;
+  width: 80rem;
+  min-width: 75rem;
   margin-top: 4rem;
   border-radius: 30px;
   border: double 4px transparent;
@@ -197,23 +241,41 @@ const Card = styled.div`
   gap: 0.5rem;
   position: relative;
   overflow: hidden;
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 2rem;
+  }
+  .description {
+    display: block;
+    width: 56%;
+  }
   @media screen and (max-width: 768px) {
     width: 76%;
     margin: 0;
-    padding: 1rem;
     gap: 1rem;
+  }
+  @media screen and (min-width: 620px) and (max-width: 768px) {
+    min-width: 60rem;
+  }
+  @media screen and (min-width: 510px) and (max-width: 620px) {
+    min-width: 50rem;
   }
   @media screen and (min-width: 768px) and (max-width: 1200px) {
     width: 44rem;
     margin-top: 4rem;
   }
 
-  @media screen and (max-width: 493px) {
+  @media screen and (max-width: 510px) {
     margin-top: 4rem;
-    width: 95%;
+    min-width: 95%;
     padding: 0rem 1rem 2rem 1.5rem;
     gap: 1rem;
     border-radius: 18px;
+    .description {
+      width: 100%;
+    }
   }
   @media screen and (min-width: 493px) and (max-width: 768px) {
     margin-top: 4rem;
@@ -225,18 +287,18 @@ const Card = styled.div`
 `;
 
 const CardH3 = styled.h3`
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 600;
   color: #fff;
-  margin-top: 6rem;
   line-height: 2rem;
-  @media screen and (max-width: 768px) {
-    font-size: 2rem;
-    margin-top: 8rem;
-  }
+
   @media screen and (max-width: 493px) {
+    font-size: 16px;
+    margin-top: 2rem;
+  }
+  @media screen and (min-width: 493px) and (max-width: 768px) {
     font-size: 18px;
-    margin-top: 8rem;
+    margin-top: 2em;
   }
   @media screen and (min-width: 768px) {
     line-height: 4rem;
@@ -280,52 +342,21 @@ const StyledAmount = styled.p`
   font-weight: 600;
   color: #fff;
   margin-bottom: 8px;
+  @media screen and (max-width: 510px) {
+    font-size: 1.5rem;
+  }
 `;
 const STyledAmountSpan = styled.span`
   font-size: 12px;
   color: #b0b0b0;
   font-weight: 400;
-`;
-
-const StyledBlocks = styled.div`
-  display: flex;
-  border-radius: 40px;
-  width: 100%;
-  background: #181d0dd9;
-  padding: 1rem 1.5rem;
-  align-items: center;
-  gap: 1rem;
-
-  @media screen and (max-width: 768px) {
-    padding: 1rem 0 1rem 1rem;
-  }
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 6px;
-  }
-`;
-const StyledBlockP = styled.p`
-  font-size: 1.5rem;
-  color: #fff;
-  text-align: center;
-  @media screen and (max-width: 768px) {
-    font-size: 1.2rem;
-  }
-  @media screen and (max-width: 493px) {
-    font-size: 12px;
-    text-align: left;
-  }
-
-  @media screen and (min-width: 1200px) {
-    font-size: 14px;
-    text-align: left;
-  }
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 510px) {
     font-size: 10px;
   }
 `;
+
 const BottomButtons = styled.div`
   display: flex;
-  flex-direction: column;
   margin-top: 2rem;
   width: 100%;
   gap: 1rem;
@@ -337,11 +368,33 @@ const StyledJoinBatch = styled.button`
   justify-content: center;
   align-items: baseline;
   gap: 1rem;
+  font-size: 12px;
+  width: 16%;
+  padding: 0.7rem 0.5rem;
+  @media screen and (max-width: 620px) {
+    font-size: 10px;
+    width: 20%;
+  }
+  @media screen and (max-width: 450px) {
+    font-size: 10px;
+    width: 38%;
+  }
 `;
 const StyledShowModule = styled.button`
   width: 100%;
   background: transparent;
   border: 2px solid #434bfd;
   border-radius: 50px;
+  font-size: 12px;
+  width: 16%;
+  padding: 0.7rem 0.5rem;
+  @media screen and (max-width: 620px) {
+    font-size: 10px;
+    width: 20%;
+  }
+  @media screen and (max-width: 450px) {
+    font-size: 10px;
+    width: 38%;
+  }
 `;
 export default MentorShipProgram;
