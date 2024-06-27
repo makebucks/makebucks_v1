@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { useState } from "react";
 import backImg from "../img/Choose our mentroship eclipse L&R.png";
 import ContactUs from "./ContactUs";
-import Banner from "../utils/Banner";
 import star from "../img/tick icon png.png";
 import mentorshipBackImg from "../img/Choose our mentroship eclipse L&R.png";
 import proTraderBackImg from "../img/pro trade card eclipse.png";
