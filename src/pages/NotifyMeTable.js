@@ -3,20 +3,20 @@ import styled from "styled-components";
 import { getNotifyMe } from "../services/notifyme";
 import NotifyMeTableRow from "./NotifyMeTableRow";
 
-
 const Table = styled.div`
   border: 1px solid var(--color-grey-200);
 
   font-size: 1.4rem;
   background-color: var(--color-grey-0);
   border-radius: 7px;
-  overflow: hidden;
-    width: 30%;
+  max-height: 100vh;
+  overflow: auto;
+  width: 100%;
 `;
 
 const TableHeader = styled.header`
   display: grid;
-  grid-template-columns: 1.8fr ;
+  grid-template-columns: 5.8fr;
   column-gap: 2.4rem;
   align-items: center;
 
@@ -30,27 +30,20 @@ const TableHeader = styled.header`
 `;
 
 function NotifyMeTable() {
-   const data = useQuery({
-        queryKey: ['notifyme'],
-        queryFn: getNotifyMe
-    })
-    console.log(data.error);
-    
+  const data = useQuery({
+    queryKey: ["notifyme"],
+    queryFn: getNotifyMe,
+  });
+  console.log(data.error);
 
   return (
-  <Table role="table">
+    <Table role="table">
       <TableHeader role="row">
         <div>Email ID</div>
-       
       </TableHeader>
-      { data.data &&
-      data.data.map((mail) => (
-        
-        <NotifyMeTableRow data={mail} key={data.id} />
-      ))}
-
+      {data.data &&
+        data.data.map((mail) => <NotifyMeTableRow data={mail} key={data.id} />)}
     </Table>
-    
   );
 }
 

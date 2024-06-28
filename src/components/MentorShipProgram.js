@@ -19,9 +19,9 @@ const MentorShipProgram = () => {
           <BackDropImg src={mentorshipBackImg} />
           <div className="row">
             <div className="description">
-              <CardH3>Foundation of stock market</CardH3>
+              <CardH3>Foundation of stock market trading</CardH3>
               <CardPara>
-                Learn everything from basic to advanced options trader.
+                Learn everything from basic to advanced in equity trading.
               </CardPara>
             </div>
             <StyledButtonDiv>
@@ -53,7 +53,7 @@ const MentorShipProgram = () => {
             <StyledJoinBatch>
               <a
                 className="tagmon"
-                href="https://learn.makebucks.in/"
+                href="https://learn.makebucks.in/l/456472bb0d"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -105,7 +105,7 @@ const MentorShipProgram = () => {
             <StyledJoinBatch>
               <a
                 className="tagmon"
-                href="https://learn.makebucks.in/"
+                href="https://learn.makebucks.in/l/271bf4763e"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -163,7 +163,7 @@ const P = styled.p`
     margin-top: 0.6rem;
   }
   @media screen and (min-width: 768px) {
-    width: 80%;
+    width: 41%;
   }
   @media screen and (min-width: 460px) and (max-width: 768px) {
     font-size: 1.5rem;
@@ -176,10 +176,10 @@ const P = styled.p`
   }
 `;
 const Img = styled.img`
-  width: 1.8rem;
+  width: 1.6rem;
   height: auto;
   @media screen and (max-width: 500px) {
-    width: 1.6rem;
+    width: 1.4rem;
   }
 `;
 const StyledMSPSection = styled.div`
@@ -199,20 +199,25 @@ const StyledButtonDiv = styled.div`
   display: flex;
   gap: 1rem;
   align-items: center;
-  @media screen and (max-width: 620px) {
+  position: absolute;
+  right: 15px;
+  top: 12%;
+  @media screen and (max-width: 768px) {
     flex-direction: column;
+    top: 9%;
   }
 `;
 const StyledButton = styled.button`
   border: 2px solid #bdfa3a;
   background: transparent;
   border-radius: 50px;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  padding: 0.2rem 1rem;
   font-weight: 500;
   width: 100%;
   .live {
     display: flex;
-    gap: 1rem;
+    gap: 0.5rem;
     justify-content: center;
     align-items: center;
   }
@@ -225,10 +230,9 @@ const StyledButton = styled.button`
 const Card = styled.div`
   display: flex;
   align-items: baseline;
-  padding: 3rem 1rem 3rem 5rem;
+  padding: 3rem 1rem 3rem 3rem;
   background: #0c0914;
-  width: 80rem;
-  min-width: 75rem;
+  width: 57rem;
   margin-top: 4rem;
   border-radius: 30px;
   border: double 4px transparent;
@@ -238,7 +242,6 @@ const Card = styled.div`
   background-clip: padding-box, border-box;
   flex-direction: column;
   z-index: 4;
-  gap: 0.5rem;
   position: relative;
   overflow: hidden;
   .row {
@@ -249,39 +252,36 @@ const Card = styled.div`
   }
   .description {
     display: block;
-    width: 56%;
+    width: 71%;
   }
   @media screen and (max-width: 768px) {
     width: 76%;
     margin: 0;
-    gap: 1rem;
   }
   @media screen and (min-width: 620px) and (max-width: 768px) {
-    min-width: 60rem;
+    min-width: 50rem;
   }
   @media screen and (min-width: 510px) and (max-width: 620px) {
     min-width: 50rem;
   }
   @media screen and (min-width: 768px) and (max-width: 1200px) {
-    width: 44rem;
+    width: 54rem;
     margin-top: 4rem;
   }
 
   @media screen and (max-width: 510px) {
     margin-top: 4rem;
-    min-width: 95%;
+    min-width: 94%;
     padding: 0rem 1rem 2rem 1.5rem;
-    gap: 1rem;
     border-radius: 18px;
     .description {
-      width: 100%;
+      width: 71%;
     }
   }
   @media screen and (min-width: 493px) and (max-width: 768px) {
     margin-top: 4rem;
     width: 40rem;
     padding: 0rem 1rem 2rem 1.5rem;
-    gap: 1rem;
     border-radius: 18px;
   }
 `;
@@ -290,7 +290,6 @@ const CardH3 = styled.h3`
   font-size: 2rem;
   font-weight: 600;
   color: #fff;
-  line-height: 2rem;
 
   @media screen and (max-width: 493px) {
     font-size: 16px;
@@ -298,15 +297,14 @@ const CardH3 = styled.h3`
   }
   @media screen and (min-width: 493px) and (max-width: 768px) {
     font-size: 18px;
-    margin-top: 2em;
+    margin-top: 1em;
   }
   @media screen and (min-width: 768px) {
-    line-height: 4rem;
   }
 `;
 
 const CardPara = styled.p`
-  font-size: 1.6rem;
+  font-size: 14px;
   color: #b0b0b0;
   @media screen and (max-width: 493px) {
     font-size: 12px;
@@ -321,27 +319,25 @@ const StyledCardSpan = styled.span`
     font-size: 12px;
     color: #b0b0b0;
     position: relative;
-    top: 10px;
+    top: 4px;
   }
   @media screen and (min-width: 493px) and (max-width: 1200px) {
     font-size: 12px;
     color: #b0b0b0;
     position: relative;
-    top: 10px;
+    top: 4px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 12px;
     color: #b0b0b0;
     position: relative;
-    top: 10px;
-    margin-top: 6px;
+    top: 4px;
   }
 `;
 const StyledAmount = styled.p`
   font-size: 2.5rem;
   font-weight: 600;
   color: #fff;
-  margin-bottom: 8px;
   @media screen and (max-width: 510px) {
     font-size: 1.5rem;
   }
@@ -357,20 +353,19 @@ const STyledAmountSpan = styled.span`
 
 const BottomButtons = styled.div`
   display: flex;
-  margin-top: 2rem;
+  margin-top: 1rem;
   width: 100%;
   gap: 1rem;
 `;
 const StyledJoinBatch = styled.button`
-  width: 100%;
   border-radius: 50px;
   display: flex;
   justify-content: center;
-  align-items: baseline;
+  align-items: center;
   gap: 1rem;
-  font-size: 12px;
-  width: 16%;
-  padding: 0.7rem 0.5rem;
+  font-size: 10px;
+  width: 17%;
+  padding: 0.4rem 0.5rem;
   @media screen and (max-width: 620px) {
     font-size: 10px;
     width: 20%;
@@ -385,9 +380,9 @@ const StyledShowModule = styled.button`
   background: transparent;
   border: 2px solid #434bfd;
   border-radius: 50px;
-  font-size: 12px;
-  width: 16%;
-  padding: 0.7rem 0.5rem;
+  font-size: 10px;
+  width: 17%;
+  padding: 0.4rem 0.5rem;
   @media screen and (max-width: 620px) {
     font-size: 10px;
     width: 20%;

@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { useState } from "react";
 import backImg from "../img/Choose our mentroship eclipse L&R.png";
 import ContactUs from "./ContactUs";
+import Banner from "../utils/Banner";
 import star from "../img/tick icon png.png";
 import mentorshipBackImg from "../img/Choose our mentroship eclipse L&R.png";
 import proTraderBackImg from "../img/pro trade card eclipse.png";
@@ -67,7 +68,7 @@ const TradersMentorship = () => {
                 Limited offer
               </StyledButton>
             </StyledButtonDiv>
-            <CardH3>Foundation of stock market</CardH3>
+            <CardH3>Foundation of stock market trading</CardH3>
             <CardPara>
               Learn everything from basic to advanced equity trader.
             </CardPara>
@@ -99,7 +100,7 @@ const TradersMentorship = () => {
             <BottomButtons>
               <a
                 className="tagmon"
-                href="https://learn.makebucks.in/"
+                href="https://learn.makebucks.in/l/456472bb0d"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -173,7 +174,7 @@ const TradersMentorship = () => {
               {" "}
               <a
                 className="tagmon"
-                href="https://learn.makebucks.in/"
+                href="https://learn.makebucks.in/l/271bf4763e"
                 target="_blank"
                 rel="noreferrer"
               >
