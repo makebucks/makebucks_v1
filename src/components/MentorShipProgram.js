@@ -253,6 +253,7 @@ const Card = styled.div`
   .description {
     display: block;
     width: 71%;
+    margin-bottom: 12px;
   }
   @media screen and (max-width: 768px) {
     width: 76%;

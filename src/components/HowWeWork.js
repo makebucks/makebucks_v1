@@ -530,9 +530,7 @@ const HowWeWork = () => {
           We have designed the module in such a way that you will learn
           everything from absolute scratch to highly skilled advanced trader.
         </JoinPara>
-        <button onClick={() => navigate("/traders-mentorship")}>
-          Join next batch
-        </button>
+
         <BackDropImg src={backImg}></BackDropImg>
       </HWWContainer>
     </>

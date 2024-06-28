@@ -857,7 +857,7 @@ const StyledButton = styled.button`
   border: 2px solid #bdfa3a;
   background: transparent;
   border-radius: 50px;
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-weight: 500;
   .live {
     display: flex;
@@ -916,7 +916,7 @@ const Card = styled.div`
   }
 `;
 const CardH3 = styled.h3`
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 600;
   color: #fff;
   margin-top: 6rem;
@@ -930,11 +930,11 @@ const CardH3 = styled.h3`
     margin-top: 8rem;
   }
   @media screen and (min-width: 768px) {
-    line-height: 4rem;
+    line-height: 3rem;
   }
 `;
 const CardPara = styled.p`
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: #b0b0b0;
   @media screen and (max-width: 493px) {
     font-size: 12px;
