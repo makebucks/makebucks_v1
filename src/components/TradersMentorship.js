@@ -709,7 +709,7 @@ const StyledCardContainer = styled.div`
   display: flex;
   gap: 6rem;
   padding: 0 2rem;
-  margin-bottom: 2rem;
+  justify-content: center;
   margin-bottom: 4rem;
   @media screen and (max-width: 968px) {
     flex-direction: column;
