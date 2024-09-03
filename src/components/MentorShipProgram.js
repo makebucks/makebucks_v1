@@ -161,7 +161,6 @@ const StyledMSPSection = styled.div`
 const StyledCardContainer = styled.div`
   display: flex;
   gap: 6rem;
-  width: 98rem;
   justify-content: center;
   padding: 0 2rem;
   margin-bottom: 2rem;

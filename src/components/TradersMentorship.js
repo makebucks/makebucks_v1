@@ -708,11 +708,8 @@ const StyledHeader = styled.div`
 const StyledCardContainer = styled.div`
   display: flex;
   gap: 6rem;
-  width: 98rem;
-  justify-content: flex-start;
   padding: 0 2rem;
   margin-bottom: 2rem;
-  margin: 2rem auto;
   margin-bottom: 4rem;
   @media screen and (max-width: 968px) {
     flex-direction: column;
