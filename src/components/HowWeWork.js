@@ -248,6 +248,42 @@ const HowWeWork = () => {
                 </DropDownSection>
                 <DropDownSection
                   onClick={() => {
+                    showModule("eleven");
+                  }}
+                >
+                  <Module
+                    onClick={() => {
+                      showModule("eleven");
+                    }}
+                  >
+                    <StyledP>Bonus lecture</StyledP>
+                    <AiOutlineRight
+                      onClick={() => {
+                        showModule("eleven");
+                      }}
+                    />
+                  </Module>
+                  {value === "eleven" && (
+                    <Content>
+                      <StyledContent>
+                        <RecordImg src={recordIcon}></RecordImg>
+                        <ContentP>Tracking global stock market news</ContentP>
+                      </StyledContent>
+                      <StyledContent>
+                        <RecordImg src={recordIcon}></RecordImg>
+                        <ContentP>Intraday trading strategy </ContentP>
+                      </StyledContent>
+                      <StyledContent>
+                        <RecordImg src={recordIcon}></RecordImg>
+                        <ContentP>
+                          Recap of technical analysis (live chart)
+                        </ContentP>
+                      </StyledContent>
+                    </Content>
+                  )}
+                </DropDownSection>
+                <DropDownSection
+                  onClick={() => {
                     showModule("five");
                   }}
                 >
@@ -461,20 +497,6 @@ const HowWeWork = () => {
                   </Module>
                   {value === "ten" && (
                     <Content>
-                      <StyledContent>
-                        <RecordImg src={recordIcon}></RecordImg>
-                        <ContentP>Tracking global stock market news</ContentP>
-                      </StyledContent>
-                      <StyledContent>
-                        <RecordImg src={recordIcon}></RecordImg>
-                        <ContentP>Intraday trading strategy </ContentP>
-                      </StyledContent>
-                      <StyledContent>
-                        <RecordImg src={recordIcon}></RecordImg>
-                        <ContentP>
-                          Recap of technical analysis (live chart)
-                        </ContentP>
-                      </StyledContent>
                       <StyledContent>
                         <RecordImg src={recordIcon}></RecordImg>
                         <ContentP>

@@ -2,6 +2,8 @@ import styled from "styled-components";
 import mentorshipBackImg from "../img/Choose our mentroship eclipse L&R.png";
 import { useNavigate } from "react-router-dom";
 import recorded from "../img/live icon.png";
+import star from "../img/tick icon png.png";
+
 const MentorShipProgram = () => {
   const navigate = useNavigate();
   return (
@@ -9,115 +11,80 @@ const MentorShipProgram = () => {
       <StyledMSPSection>
         <H2>Mentorship Program.</H2>
         <P>
-          Transparent pricing for you. Choose our program and get access to our
-          trading community,{" "}
-          <StyledSpan onClick={() => navigate("/traders-mentorship")}>
-            Learn more
-          </StyledSpan>
+          We have designed the module in the way that you wll learn everything
+          from absolute scratch to highly skilled advanced trader.
         </P>
-        <Card>
-          <BackDropImg src={mentorshipBackImg} />
-          <div className="row">
-            <div className="description">
-              <CardH3>Foundation of stock market trading</CardH3>
+        <StyledCardContainer>
+          <StyledFirstCard>
+            <Card>
+              <BackDropImg src={mentorshipBackImg} />
+              <StyledButtonDiv>
+                <StyledButton>
+                  <div className="live">
+                    <Img src={recorded}></Img>
+                    Recorded
+                  </div>
+                </StyledButton>
+              </StyledButtonDiv>
+              <CardH3>Learn about stock market trading from A-Z</CardH3>
               <CardPara>
-                Learn everything from basic to advanced in equity trading.
+                Learn everything from basic to advanced concepts. This will
+                cover trading in Equity and Futures & Options market
               </CardPara>
-            </div>
-            <StyledButtonDiv>
-              <StyledButton>
-                {" "}
-                <div className="live">
-                  <Img src={recorded}></Img>
-                  Recorded
-                </div>
-              </StyledButton>
-              <StyledButton
-                style={{
-                  background: `#DBFF73
-`,
-                  color: `#0A0B0F`,
-                }}
-              >
-                Limited offer
-              </StyledButton>
-            </StyledButtonDiv>
-          </div>
+              <StyledCardSpan>₹ 2499</StyledCardSpan>
+              <StyledAmount>
+                ₹ 1499 <STyledAmountSpan>/ Lifetime</STyledAmountSpan>
+              </StyledAmount>
+              <StyledBlocks>
+                <Img src={star}></Img>
+                <StyledBlockP>Made for complete beginners</StyledBlockP>
+              </StyledBlocks>
+              <StyledBlocks>
+                <Img src={star}></Img>
+                <StyledBlockP>Learn advanced technical analysis</StyledBlockP>
+              </StyledBlocks>
+              <StyledBlocks>
+                <Img src={star}></Img>
+                <StyledBlockP>Learn about Equity and F&O trading</StyledBlockP>
+              </StyledBlocks>
+              <StyledBlocks>
+                <Img src={star}></Img>
+                <StyledBlockP>Deep analyze of option strategies</StyledBlockP>
+              </StyledBlocks>
+              <StyledBlocks>
+                <Img src={star}></Img>
+                <StyledBlockP>Analyze FII & OI data’s like pro</StyledBlockP>
+              </StyledBlocks>
+              <StyledBlocks>
+                <Img src={star}></Img>
+                <StyledBlockP>Get certification</StyledBlockP>
+              </StyledBlocks>
+              <StyledBlocks>
+                <Img src={star}></Img>
+                <StyledBlockP>Access to our discord (Lifetime)</StyledBlockP>
+              </StyledBlocks>
+              <BottomButtons>
+                <a
+                  className="tagmon"
+                  href="https://learn.makebucks.in/l/456472bb0d"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <StyledJoinBatch>
+                    {" "}
+                    Enroll now <span>-&gt;</span>
+                  </StyledJoinBatch>{" "}
+                </a>
 
-          <StyledCardSpan>₹ 599</StyledCardSpan>
-          <StyledAmount>
-            ₹ 299 <STyledAmountSpan>/ Lifetime</STyledAmountSpan>
-          </StyledAmount>
-
-          <BottomButtons>
-            <StyledJoinBatch>
-              <a
-                className="tagmon"
-                href="https://learn.makebucks.in/l/456472bb0d"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Enroll now <span>-&gt;</span>
-              </a>
-            </StyledJoinBatch>
-
-            <StyledShowModule onClick={() => navigate("/traders-mentorship")}>
-              More details
-            </StyledShowModule>
-          </BottomButtons>
-        </Card>
-        <Card>
-          <BackDropImg src={mentorshipBackImg} />
-          <div className="row">
-            <div className="description">
-              <CardH3>Futures & Options trading masterclass</CardH3>
-              <CardPara>
-                Learn about the concepts of Options buying & selling strategies
-                to generate income.
-              </CardPara>
-            </div>
-            <StyledButtonDiv>
-              <StyledButton>
-                {" "}
-                <div className="live">
-                  <Img src={recorded}></Img>
-                  Recorded
-                </div>
-              </StyledButton>
-              <StyledButton
-                style={{
-                  background: `#DBFF73
-`,
-                  color: `#0A0B0F`,
-                }}
-              >
-                Limited offer
-              </StyledButton>
-            </StyledButtonDiv>
-          </div>
-
-          <StyledCardSpan>₹ 999</StyledCardSpan>
-          <StyledAmount>
-            ₹ 499 <STyledAmountSpan>/ Lifetime</STyledAmountSpan>
-          </StyledAmount>
-
-          <BottomButtons>
-            <StyledJoinBatch>
-              <a
-                className="tagmon"
-                href="https://learn.makebucks.in/l/271bf4763e"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Enroll now <span>-&gt;</span>
-              </a>
-            </StyledJoinBatch>
-
-            <StyledShowModule onClick={() => navigate("/traders-mentorship")}>
-              More details
-            </StyledShowModule>
-          </BottomButtons>
-        </Card>
+                <StyledShowModule
+                  onClick={() => navigate("/traders-mentorship")}
+                >
+                  Show modules
+                </StyledShowModule>
+              </BottomButtons>
+            </Card>
+          </StyledFirstCard>
+        </StyledCardContainer>
       </StyledMSPSection>
     </>
   );
@@ -154,7 +121,7 @@ const H2 = styled.h2`
 `;
 const P = styled.p`
   font-size: 1.875rem;
-  width: 42%;
+  width: 60%;
   text-align: center;
 
   @media screen and (max-width: 460px) {
@@ -163,7 +130,7 @@ const P = styled.p`
     margin-top: 0.6rem;
   }
   @media screen and (min-width: 768px) {
-    width: 41%;
+    width: 50%;
   }
   @media screen and (min-width: 460px) and (max-width: 768px) {
     font-size: 1.5rem;
@@ -191,48 +158,80 @@ const StyledMSPSection = styled.div`
   align-items: center;
   justify-content: center;
 `;
-const StyledSpan = styled.span`
-  color: #434bfd;
-  cursor: pointer;
+const StyledCardContainer = styled.div`
+  display: flex;
+  gap: 6rem;
+  width: 98rem;
+  justify-content: center;
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+  margin: 2rem auto;
+  margin-bottom: 4rem;
+  @media screen and (max-width: 968px) {
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+  }
 `;
+const BottomButtons = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  width: 100%;
+  gap: 1rem;
+`;
+const StyledShowModule = styled.button`
+  width: 100%;
+  background: transparent;
+  border: 2px solid #434bfd;
+  border-radius: 50px;
+`;
+const StyledJoinBatch = styled.button`
+  width: 100%;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 1rem;
+`;
+const StyledFirstCard = styled.div`
+  display: flex;
+  width: auto;
+  justify-content: center;
+`;
+
 const StyledButtonDiv = styled.div`
   display: flex;
   gap: 1rem;
   align-items: center;
   position: absolute;
-  right: 15px;
-  top: 12%;
-  @media screen and (max-width: 768px) {
-    flex-direction: column;
-    top: 9%;
-  }
+  right: 20px;
+  top: 20px;
 `;
 const StyledButton = styled.button`
   border: 2px solid #bdfa3a;
   background: transparent;
   border-radius: 50px;
-  font-size: 0.9rem;
-  padding: 0.2rem 1rem;
+  font-size: 1rem;
   font-weight: 500;
-  width: 100%;
   .live {
     display: flex;
-    gap: 0.5rem;
+    gap: 1rem;
     justify-content: center;
     align-items: center;
   }
-  @media screen and (max-width: 450px) {
-    width: 95%;
-    font-size: 8px;
+  @media screen and (max-width: 493px) {
+    font-size: 10px;
   }
 `;
 
 const Card = styled.div`
   display: flex;
   align-items: baseline;
-  padding: 3rem 1rem 3rem 3rem;
+  justify-content: space-between;
+  padding: 1rem 2rem 2rem 2rem;
   background: #0c0914;
-  width: 57rem;
+  width: 40rem;
   margin-top: 4rem;
   border-radius: 30px;
   border: double 4px transparent;
@@ -242,70 +241,55 @@ const Card = styled.div`
   background-clip: padding-box, border-box;
   flex-direction: column;
   z-index: 4;
+  gap: 0.5rem;
   position: relative;
   overflow: hidden;
-  .row {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 2rem;
-  }
-  .description {
-    display: block;
-    width: 71%;
-    margin-bottom: 12px;
-  }
   @media screen and (max-width: 768px) {
     width: 76%;
     margin: 0;
-  }
-  @media screen and (min-width: 620px) and (max-width: 768px) {
-    min-width: 50rem;
-  }
-  @media screen and (min-width: 510px) and (max-width: 620px) {
-    min-width: 50rem;
+    padding: 1rem;
+    gap: 1rem;
   }
   @media screen and (min-width: 768px) and (max-width: 1200px) {
-    width: 54rem;
+    width: 44rem;
     margin-top: 4rem;
   }
 
-  @media screen and (max-width: 510px) {
-    margin-top: 4rem;
-    min-width: 94%;
+  @media screen and (max-width: 493px) {
+    margin-top: 1rem;
+    width: 95%;
     padding: 0rem 1rem 2rem 1.5rem;
+    gap: 1rem;
     border-radius: 18px;
-    .description {
-      width: 71%;
-    }
   }
   @media screen and (min-width: 493px) and (max-width: 768px) {
-    margin-top: 4rem;
+    margin-top: 1rem;
     width: 40rem;
     padding: 0rem 1rem 2rem 1.5rem;
+    gap: 1rem;
     border-radius: 18px;
   }
 `;
-
 const CardH3 = styled.h3`
   font-size: 2rem;
   font-weight: 600;
   color: #fff;
-
-  @media screen and (max-width: 493px) {
-    font-size: 16px;
-    margin-top: 2rem;
+  margin-top: 6rem;
+  line-height: 2rem;
+  @media screen and (max-width: 768px) {
+    font-size: 2rem;
+    margin-top: 8rem;
   }
-  @media screen and (min-width: 493px) and (max-width: 768px) {
+  @media screen and (max-width: 493px) {
     font-size: 18px;
-    margin-top: 1em;
+    margin-top: 8rem;
   }
   @media screen and (min-width: 768px) {
+    line-height: 3rem;
   }
 `;
-
 const CardPara = styled.p`
-  font-size: 14px;
+  font-size: 1.4rem;
   color: #b0b0b0;
   @media screen and (max-width: 493px) {
     font-size: 12px;
@@ -320,77 +304,71 @@ const StyledCardSpan = styled.span`
     font-size: 12px;
     color: #b0b0b0;
     position: relative;
-    top: 4px;
+    top: 10px;
   }
   @media screen and (min-width: 493px) and (max-width: 1200px) {
     font-size: 12px;
     color: #b0b0b0;
     position: relative;
-    top: 4px;
+    top: 10px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 12px;
     color: #b0b0b0;
     position: relative;
-    top: 4px;
+    top: 10px;
+    margin-top: 6px;
   }
 `;
 const StyledAmount = styled.p`
   font-size: 2.5rem;
   font-weight: 600;
   color: #fff;
-  @media screen and (max-width: 510px) {
-    font-size: 1.5rem;
-  }
+  margin-bottom: 8px;
 `;
 const STyledAmountSpan = styled.span`
   font-size: 12px;
   color: #b0b0b0;
   font-weight: 400;
-  @media screen and (max-width: 510px) {
-    font-size: 10px;
+`;
+
+const StyledBlocks = styled.div`
+  display: flex;
+  border-radius: 40px;
+  width: 100%;
+  background: #181d0dd9;
+  padding: 1rem 1rem;
+  align-items: center;
+  gap: 1rem;
+  @media screen and (max-width: 768px) {
+    padding: 1rem;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 1rem 0 1rem 1rem;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 6px;
   }
 `;
 
-const BottomButtons = styled.div`
-  display: flex;
-  margin-top: 1rem;
-  width: 100%;
-  gap: 1rem;
-`;
-const StyledJoinBatch = styled.button`
-  border-radius: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  font-size: 10px;
-  width: 17%;
-  padding: 0.4rem 0.5rem;
-  @media screen and (max-width: 620px) {
-    font-size: 10px;
-    width: 20%;
+const StyledBlockP = styled.p`
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+  @media screen and (max-width: 768px) {
+    font-size: 1.2rem;
   }
-  @media screen and (max-width: 450px) {
-    font-size: 10px;
-    width: 38%;
+  @media screen and (max-width: 493px) {
+    font-size: 12px;
+    text-align: left;
   }
-`;
-const StyledShowModule = styled.button`
-  width: 100%;
-  background: transparent;
-  border: 2px solid #434bfd;
-  border-radius: 50px;
-  font-size: 10px;
-  width: 17%;
-  padding: 0.4rem 0.5rem;
-  @media screen and (max-width: 620px) {
-    font-size: 10px;
-    width: 20%;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    text-align: left;
   }
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 350px) {
     font-size: 10px;
-    width: 38%;
   }
 `;
 export default MentorShipProgram;

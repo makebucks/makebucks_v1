@@ -4,7 +4,6 @@ import backImg from "../img/Choose our mentroship eclipse L&R.png";
 import ContactUs from "./ContactUs";
 import star from "../img/tick icon png.png";
 import mentorshipBackImg from "../img/Choose our mentroship eclipse L&R.png";
-import proTraderBackImg from "../img/pro trade card eclipse.png";
 import { AiOutlineRight } from "react-icons/ai";
 import recordIcon from "../img/Video icon blue.png";
 import { Link } from "react-scroll";
@@ -12,8 +11,6 @@ import recorded from "../img/live icon.png";
 
 const TradersMentorship = () => {
   const [value, setValue] = useState("");
-  const [foundation, setFoundation] = useState(true);
-  const [fando, setFando] = useState(false);
   const showModule = (val) => {
     if (value === val) {
       setValue(() => {
@@ -25,15 +22,7 @@ const TradersMentorship = () => {
       return val;
     });
   };
-  const showContents = (val) => {
-    if (val === "found") {
-      setFoundation(true);
-      setFando(false);
-    } else {
-      setFando(true);
-      setFoundation(false);
-    }
-  };
+
   return (
     <>
       <StyledHeader>
@@ -57,35 +46,35 @@ const TradersMentorship = () => {
                   Recorded
                 </div>
               </StyledButton>
-              <StyledButton
-                style={{
-                  background: `#DBFF73
-`,
-                  color: `#0A0B0F`,
-                }}
-              >
-                Limited offer
-              </StyledButton>
             </StyledButtonDiv>
-            <CardH3>Foundation of stock market trading</CardH3>
+            <CardH3>Learn about stock market trading from A-Z</CardH3>
             <CardPara>
-              Learn everything from basic to advanced equity trader.
+              Learn everything from basic to advanced concepts. This will cover
+              trading in Equity and Futures & Options market
             </CardPara>
-            <StyledCardSpan>₹ 599</StyledCardSpan>
+            <StyledCardSpan>₹ 2499</StyledCardSpan>
             <StyledAmount>
-              ₹ 299 <STyledAmountSpan>/ Lifetime</STyledAmountSpan>
+              ₹ 1499 <STyledAmountSpan>/ Lifetime</STyledAmountSpan>
             </StyledAmount>
             <StyledBlocks>
               <Img src={star}></Img>
-              <StyledBlockP>Crafted for complete beginners</StyledBlockP>
-            </StyledBlocks>
-            <StyledBlocks>
-              <Img src={star}></Img>
-              <StyledBlockP>Learn stock market trading - Equity</StyledBlockP>
+              <StyledBlockP>Made for complete beginners</StyledBlockP>
             </StyledBlocks>
             <StyledBlocks>
               <Img src={star}></Img>
               <StyledBlockP>Learn advanced technical analysis</StyledBlockP>
+            </StyledBlocks>
+            <StyledBlocks>
+              <Img src={star}></Img>
+              <StyledBlockP>Learn about Equity and F&O trading</StyledBlockP>
+            </StyledBlocks>
+            <StyledBlocks>
+              <Img src={star}></Img>
+              <StyledBlockP>Deep analyze of option strategies</StyledBlockP>
+            </StyledBlocks>
+            <StyledBlocks>
+              <Img src={star}></Img>
+              <StyledBlockP>Analyze FII & OI data’s like pro</StyledBlockP>
             </StyledBlocks>
             <StyledBlocks>
               <Img src={star}></Img>
@@ -95,7 +84,6 @@ const TradersMentorship = () => {
               <Img src={star}></Img>
               <StyledBlockP>Access to our discord (Lifetime)</StyledBlockP>
             </StyledBlocks>
-
             <BottomButtons>
               <a
                 className="tagmon"
@@ -109,554 +97,462 @@ const TradersMentorship = () => {
                 </StyledJoinBatch>{" "}
               </a>
               <Link to="modules" smooth={true} offset={-50} duration={500}>
-                <StyledShowModule onClick={() => showContents("found")}>
-                  Show modules
-                </StyledShowModule>
+                <StyledShowModule>Show modules</StyledShowModule>
               </Link>
             </BottomButtons>
           </Card>
         </StyledFirstCard>
-        <StyledSecondCard>
-          <Card>
-            <BackDropImg src={proTraderBackImg} />
-            <StyledButtonDiv>
-              <StyledButton>
-                <div className="live">
-                  <Img src={recorded}></Img>
-                  Recorded
-                </div>
-              </StyledButton>
-              <StyledButton
-                style={{
-                  background: `#DBFF73
-`,
-                  color: `#0A0B0F`,
-                }}
-              >
-                Limited offer
-              </StyledButton>
-            </StyledButtonDiv>
-            <CardH3>Futures & Options trading masterclass</CardH3>
-            <CardPara>
-              Learn about the concepts of Options buying & selling strategies to
-              generate income.
-            </CardPara>
-            <StyledCardSpan>₹ 999</StyledCardSpan>
-            <StyledAmount>
-              ₹ 499 <STyledAmountSpan>/ Lifetime</STyledAmountSpan>
-            </StyledAmount>
-            <StyledBlocks>
-              <Img src={star}></Img>
-              <StyledBlockP>Learn futures & options</StyledBlockP>
-            </StyledBlocks>
-            <StyledBlocks>
-              <Img src={star}></Img>
-              <StyledBlockP>Deep analyze of option strategies</StyledBlockP>
-            </StyledBlocks>
-            <StyledBlocks>
-              <Img src={star}></Img>
-
-              <StyledBlockP>Analyze FII & OI data’s like pro</StyledBlockP>
-            </StyledBlocks>
-            <StyledBlocks>
-              <Img src={star}></Img>
-
-              <StyledBlockP>Get certification</StyledBlockP>
-            </StyledBlocks>
-            <StyledBlocks>
-              <Img src={star}></Img>
-
-              <StyledBlockP>Access to our discord (Lifetime)</StyledBlockP>
-            </StyledBlocks>
-
-            <BottomButtons>
-              {" "}
-              <a
-                className="tagmon"
-                href="https://learn.makebucks.in/l/271bf4763e"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <StyledJoinBatch>
-                  Enroll now <span>-&gt;</span>
-                </StyledJoinBatch>
-              </a>
-              <Link to="modules" smooth={true} offset={-50} duration={500}>
-                <StyledShowModule onClick={() => showContents("fo")}>
-                  Show modules
-                </StyledShowModule>
-              </Link>
-            </BottomButtons>
-          </Card>
-        </StyledSecondCard>
       </StyledCardContainer>
       <CourseContent>
         <ContentNav>
           <p>Course content</p>
         </ContentNav>
-        {foundation && (
-          <CourseContents id="modules">
-            <h4>Foundation of stock market trading</h4>
-            <AccordianSection>
-              <DropDownSection
+
+        <CourseContents id="modules">
+          <h4>Stock market trading A-Z</h4>
+          <AccordianSection>
+            <DropDownSection
+              onClick={() => {
+                showModule("one");
+              }}
+            >
+              <Module
                 onClick={() => {
                   showModule("one");
                 }}
               >
-                <Module
+                <StyledP>Introduction to stock market</StyledP>
+                <AiOutlineRight
                   onClick={() => {
                     showModule("one");
                   }}
-                >
-                  <StyledP>Introduction to stock market</StyledP>
-                  <AiOutlineRight
-                    onClick={() => {
-                      showModule("one");
-                    }}
-                  />
-                </Module>
-                {value === "one" && (
-                  <Content>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>
-                        What is stock market / stock exchanges
-                      </ContentP>
-                    </StyledContent>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Who are stock brokers</ContentP>
-                    </StyledContent>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>
-                        What is DEMAT account & players in the stock market
-                      </ContentP>
-                    </StyledContent>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>How to open DEMAT & Trading account</ContentP>
-                    </StyledContent>
-                  </Content>
-                )}
-              </DropDownSection>
-              <DropDownSection
+                />
+              </Module>
+              {value === "one" && (
+                <Content>
+                  <StyledContent>
+                    <RecordImg src={recordIcon}></RecordImg>
+                    <ContentP>What is stock market / stock exchanges</ContentP>
+                  </StyledContent>
+                  <StyledContent>
+                    <RecordImg src={recordIcon}></RecordImg>
+                    <ContentP>Who are stock brokers</ContentP>
+                  </StyledContent>
+                  <StyledContent>
+                    <RecordImg src={recordIcon}></RecordImg>
+                    <ContentP>
+                      What is DEMAT account & players in the stock market
+                    </ContentP>
+                  </StyledContent>
+                  <StyledContent>
+                    <RecordImg src={recordIcon}></RecordImg>
+                    <ContentP>How to open DEMAT & Trading account</ContentP>
+                  </StyledContent>
+                </Content>
+              )}
+            </DropDownSection>
+            <DropDownSection
+              onClick={() => {
+                showModule("two");
+              }}
+            >
+              <Module
                 onClick={() => {
                   showModule("two");
                 }}
               >
-                <Module
+                <StyledP
                   onClick={() => {
                     showModule("two");
                   }}
                 >
-                  <StyledP
-                    onClick={() => {
-                      showModule("two");
-                    }}
-                  >
-                    Deep dive into Technical analysis
-                  </StyledP>
-                  <AiOutlineRight
-                    onClick={() => {
-                      showModule("two");
-                    }}
-                  />
-                </Module>
-                {value === "two" && (
-                  <Content>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>
-                        Introduction & Technical jargons in the market
-                      </ContentP>
-                    </StyledContent>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Candlesticks patterns & why it works</ContentP>
-                    </StyledContent>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Supply & Demand & its importance</ContentP>
-                    </StyledContent>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Plotting Supply & Demand (live)</ContentP>
-                    </StyledContent>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Identifying market trends & phases</ContentP>
-                    </StyledContent>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Gap theory & Top 6 chart patterns</ContentP>
-                    </StyledContent>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>
-                        Price action vs Indicators (Leading & Lagging)
-                      </ContentP>
-                    </StyledContent>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>
-                        How to select stocks for Intraday & Swing trading
-                      </ContentP>
-                    </StyledContent>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>
-                        How to place your first order & types of orders
-                      </ContentP>
-                    </StyledContent>
-                  </Content>
-                )}
-              </DropDownSection>
-              <DropDownSection
+                  Deep dive into Technical analysis
+                </StyledP>
+                <AiOutlineRight
+                  onClick={() => {
+                    showModule("two");
+                  }}
+                />
+              </Module>
+              {value === "two" && (
+                <Content>
+                  <StyledContent>
+                    <RecordImg src={recordIcon}></RecordImg>
+                    <ContentP>
+                      Introduction & Technical jargons in the market
+                    </ContentP>
+                  </StyledContent>
+                  <StyledContent>
+                    <RecordImg src={recordIcon}></RecordImg>
+                    <ContentP>Candlesticks patterns & why it works</ContentP>
+                  </StyledContent>
+                  <StyledContent>
+                    <RecordImg src={recordIcon}></RecordImg>
+                    <ContentP>Supply & Demand & its importance</ContentP>
+                  </StyledContent>
+                  <StyledContent>
+                    <RecordImg src={recordIcon}></RecordImg>
+                    <ContentP>Plotting Supply & Demand (live)</ContentP>
+                  </StyledContent>
+                  <StyledContent>
+                    <RecordImg src={recordIcon}></RecordImg>
+                    <ContentP>Identifying market trends & phases</ContentP>
+                  </StyledContent>
+                  <StyledContent>
+                    <RecordImg src={recordIcon}></RecordImg>
+                    <ContentP>Gap theory & Top 6 chart patterns</ContentP>
+                  </StyledContent>
+                  <StyledContent>
+                    <RecordImg src={recordIcon}></RecordImg>
+                    <ContentP>
+                      Price action vs Indicators (Leading & Lagging)
+                    </ContentP>
+                  </StyledContent>
+                  <StyledContent>
+                    <RecordImg src={recordIcon}></RecordImg>
+                    <ContentP>
+                      How to select stocks for Intraday & Swing trading
+                    </ContentP>
+                  </StyledContent>
+                  <StyledContent>
+                    <RecordImg src={recordIcon}></RecordImg>
+                    <ContentP>
+                      How to place your first order & types of orders
+                    </ContentP>
+                  </StyledContent>
+                </Content>
+              )}
+            </DropDownSection>
+            <DropDownSection
+              onClick={() => {
+                showModule("three");
+              }}
+            >
+              <Module
                 onClick={() => {
                   showModule("three");
                 }}
               >
-                <Module
+                <StyledP>Risk management \ Money management</StyledP>
+                <AiOutlineRight
                   onClick={() => {
                     showModule("three");
                   }}
-                >
-                  <StyledP>Risk management \ Money management</StyledP>
-                  <AiOutlineRight
-                    onClick={() => {
-                      showModule("three");
-                    }}
-                  />
-                </Module>
-                {value === "three" && (
-                  <Content>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>
-                        How to manage you risk (Risk to Reward)
-                      </ContentP>
-                    </StyledContent>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>
-                        How much win % actually you need to profitable trader
-                      </ContentP>
-                    </StyledContent>
-                  </Content>
-                )}
-              </DropDownSection>
-              <DropDownSection
+                />
+              </Module>
+              {value === "three" && (
+                <Content>
+                  <StyledContent>
+                    <RecordImg src={recordIcon}></RecordImg>
+                    <ContentP>How to manage you risk (Risk to Reward)</ContentP>
+                  </StyledContent>
+                  <StyledContent>
+                    <RecordImg src={recordIcon}></RecordImg>
+                    <ContentP>
+                      How much win % actually you need to profitable trader
+                    </ContentP>
+                  </StyledContent>
+                </Content>
+              )}
+            </DropDownSection>
+            <DropDownSection
+              onClick={() => {
+                showModule("four");
+              }}
+            >
+              <Module
                 onClick={() => {
                   showModule("four");
                 }}
               >
-                <Module
+                <StyledP>Trading psychology</StyledP>
+                <AiOutlineRight
                   onClick={() => {
                     showModule("four");
                   }}
-                >
-                  <StyledP>Trading psychology</StyledP>
-                  <AiOutlineRight
-                    onClick={() => {
-                      showModule("four");
-                    }}
-                  />
-                </Module>
-                {value === "four" && (
-                  <Content>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Why trading psychology is important</ContentP>
-                    </StyledContent>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Tips to improve trading psychology</ContentP>
-                    </StyledContent>
-                  </Content>
-                )}
-              </DropDownSection>
-              <DropDownSection
+                />
+              </Module>
+              {value === "four" && (
+                <Content>
+                  <StyledContent>
+                    <RecordImg src={recordIcon}></RecordImg>
+                    <ContentP>Why trading psychology is important</ContentP>
+                  </StyledContent>
+                  <StyledContent>
+                    <RecordImg src={recordIcon}></RecordImg>
+                    <ContentP>Tips to improve trading psychology</ContentP>
+                  </StyledContent>
+                </Content>
+              )}
+            </DropDownSection>
+            <DropDownSection
+              onClick={() => {
+                showModule("nine");
+              }}
+            >
+              <Module
                 onClick={() => {
                   showModule("nine");
                 }}
               >
-                <Module
+                <StyledP>Bonus lecture</StyledP>
+                <AiOutlineRight
                   onClick={() => {
                     showModule("nine");
                   }}
-                >
-                  <StyledP>Bonus lecture</StyledP>
-                  <AiOutlineRight
-                    onClick={() => {
-                      showModule("nine");
-                    }}
-                  />
-                </Module>
-                {value === "nine" && (
-                  <Content>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Tracking global stock market news</ContentP>
-                    </StyledContent>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Intraday trading strategy </ContentP>
-                    </StyledContent>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>
-                        Recap of technical analysis (live chart)
-                      </ContentP>
-                    </StyledContent>
-                  </Content>
-                )}
-              </DropDownSection>
-            </AccordianSection>
-          </CourseContents>
-        )}
-        {fando && (
-          <CourseContents>
-            <h4>Futures & Options trading masterclass</h4>
-            <AccordianSection>
-              <DropDownSection
+                />
+              </Module>
+              {value === "nine" && (
+                <Content>
+                  <StyledContent>
+                    <RecordImg src={recordIcon}></RecordImg>
+                    <ContentP>Tracking global stock market news</ContentP>
+                  </StyledContent>
+                  <StyledContent>
+                    <RecordImg src={recordIcon}></RecordImg>
+                    <ContentP>Intraday trading strategy </ContentP>
+                  </StyledContent>
+                  <StyledContent>
+                    <RecordImg src={recordIcon}></RecordImg>
+                    <ContentP>
+                      Recap of technical analysis (live chart)
+                    </ContentP>
+                  </StyledContent>
+                </Content>
+              )}
+            </DropDownSection>
+            <DropDownSection
+              onClick={() => {
+                showModule("five");
+              }}
+            >
+              <Module
                 onClick={() => {
                   showModule("five");
                 }}
               >
-                <Module
+                <StyledP> Introduction to futures & options</StyledP>
+                <AiOutlineRight
                   onClick={() => {
                     showModule("five");
                   }}
-                >
-                  <StyledP> Introduction to futures & options</StyledP>
-                  <AiOutlineRight
-                    onClick={() => {
-                      showModule("five");
-                    }}
-                  />
-                </Module>
-                {value === "five" && (
-                  <Content>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Overview of financial markets</ContentP>
-                    </StyledContent>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Understanding futures</ContentP>
-                    </StyledContent>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Real life examples for futures</ContentP>
-                    </StyledContent>
-                  </Content>
-                )}
-              </DropDownSection>
-              <DropDownSection
+                />
+              </Module>
+              {value === "five" && (
+                <Content>
+                  <StyledContent>
+                    <RecordImg src={recordIcon}></RecordImg>
+                    <ContentP>Overview of financial markets</ContentP>
+                  </StyledContent>
+                  <StyledContent>
+                    <RecordImg src={recordIcon}></RecordImg>
+                    <ContentP>Understanding futures</ContentP>
+                  </StyledContent>
+                  <StyledContent>
+                    <RecordImg src={recordIcon}></RecordImg>
+                    <ContentP>Real life examples for futures</ContentP>
+                  </StyledContent>
+                </Content>
+              )}
+            </DropDownSection>
+            <DropDownSection
+              onClick={() => {
+                showModule("six");
+              }}
+            >
+              <Module
                 onClick={() => {
                   showModule("six");
                 }}
               >
-                <Module
+                <StyledP>In depth study of futures</StyledP>
+                <AiOutlineRight
                   onClick={() => {
                     showModule("six");
                   }}
-                >
-                  <StyledP>In depth study of futures</StyledP>
-                  <AiOutlineRight
-                    onClick={() => {
-                      showModule("six");
-                    }}
-                  />
-                </Module>
-                {value === "six" && (
-                  <Content>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Futures in the Indian stock market</ContentP>
-                    </StyledContent>
-                  </Content>
-                )}
-              </DropDownSection>
-              <DropDownSection
+                />
+              </Module>
+              {value === "six" && (
+                <Content>
+                  <StyledContent>
+                    <RecordImg src={recordIcon}></RecordImg>
+                    <ContentP>Futures in the Indian stock market</ContentP>
+                  </StyledContent>
+                </Content>
+              )}
+            </DropDownSection>
+            <DropDownSection
+              onClick={() => {
+                showModule("seven");
+              }}
+            >
+              <Module
                 onClick={() => {
                   showModule("seven");
                 }}
               >
-                <Module
+                <StyledP>Comprehensive study of options</StyledP>
+                <AiOutlineRight
                   onClick={() => {
                     showModule("seven");
                   }}
-                >
-                  <StyledP>Comprehensive study of options</StyledP>
-                  <AiOutlineRight
-                    onClick={() => {
-                      showModule("seven");
-                    }}
-                  />
-                </Module>
-                {value === "seven" && (
-                  <Content>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Introduction to option contracts</ContentP>
-                    </StyledContent>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>
-                        Real life examples for options contracts
-                      </ContentP>
-                    </StyledContent>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>
-                        In depth view of call options & put options
-                      </ContentP>
-                    </StyledContent>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>
-                        Understanding and decoding Option greeks
-                      </ContentP>
-                    </StyledContent>
-                  </Content>
-                )}
-              </DropDownSection>
-              <DropDownSection
+                />
+              </Module>
+              {value === "seven" && (
+                <Content>
+                  <StyledContent>
+                    <RecordImg src={recordIcon}></RecordImg>
+                    <ContentP>Introduction to option contracts</ContentP>
+                  </StyledContent>
+                  <StyledContent>
+                    <RecordImg src={recordIcon}></RecordImg>
+                    <ContentP>
+                      Real life examples for options contracts
+                    </ContentP>
+                  </StyledContent>
+                  <StyledContent>
+                    <RecordImg src={recordIcon}></RecordImg>
+                    <ContentP>
+                      In depth view of call options & put options
+                    </ContentP>
+                  </StyledContent>
+                  <StyledContent>
+                    <RecordImg src={recordIcon}></RecordImg>
+                    <ContentP>
+                      Understanding and decoding Option greeks
+                    </ContentP>
+                  </StyledContent>
+                </Content>
+              )}
+            </DropDownSection>
+            <DropDownSection
+              onClick={() => {
+                showModule("eight");
+              }}
+            >
+              <Module
                 onClick={() => {
                   showModule("eight");
                 }}
               >
-                <Module
+                <StyledP>Directional Options trading strategies</StyledP>
+                <AiOutlineRight
                   onClick={() => {
                     showModule("eight");
                   }}
-                >
-                  <StyledP>Directional Options trading strategies</StyledP>
-                  <AiOutlineRight
-                    onClick={() => {
-                      showModule("eight");
-                    }}
-                  />
-                </Module>
-                {value === "eight" && (
-                  <Content>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Option buying strategies</ContentP>
-                    </StyledContent>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Bull call spreads</ContentP>
-                    </StyledContent>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Bear put spreads</ContentP>
-                    </StyledContent>
-                  </Content>
-                )}
-              </DropDownSection>
-              <DropDownSection
+                />
+              </Module>
+              {value === "eight" && (
+                <Content>
+                  <StyledContent>
+                    <RecordImg src={recordIcon}></RecordImg>
+                    <ContentP>Option buying strategies</ContentP>
+                  </StyledContent>
+                  <StyledContent>
+                    <RecordImg src={recordIcon}></RecordImg>
+                    <ContentP>Bull call spreads</ContentP>
+                  </StyledContent>
+                  <StyledContent>
+                    <RecordImg src={recordIcon}></RecordImg>
+                    <ContentP>Bear put spreads</ContentP>
+                  </StyledContent>
+                </Content>
+              )}
+            </DropDownSection>
+            <DropDownSection
+              onClick={() => {
+                showModule("nine");
+              }}
+            >
+              <Module
                 onClick={() => {
                   showModule("nine");
                 }}
               >
-                <Module
+                <StyledP> Non - Directional Options trading strategies</StyledP>
+                <AiOutlineRight
                   onClick={() => {
                     showModule("nine");
                   }}
-                >
-                  <StyledP>
-                    {" "}
-                    Non - Directional Options trading strategies
-                  </StyledP>
-                  <AiOutlineRight
-                    onClick={() => {
-                      showModule("nine");
-                    }}
-                  />
-                </Module>
-                {value === "nine" && (
-                  <Content>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>
-                        Market conditions to use Long straddle
-                      </ContentP>
-                    </StyledContent>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Understanding Long strangle</ContentP>
-                    </StyledContent>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>
-                        Short straddle for neutral market conditions
-                      </ContentP>
-                    </StyledContent>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>
-                        Short strangle for neutral market conditions
-                      </ContentP>
-                    </StyledContent>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Advanced short straddle with hedges</ContentP>
-                    </StyledContent>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>
-                        Eliminating the risk of short strangle with iron condor
-                      </ContentP>
-                    </StyledContent>
-                  </Content>
-                )}
-              </DropDownSection>
-              <DropDownSection
+                />
+              </Module>
+              {value === "nine" && (
+                <Content>
+                  <StyledContent>
+                    <RecordImg src={recordIcon}></RecordImg>
+                    <ContentP>Market conditions to use Long straddle</ContentP>
+                  </StyledContent>
+                  <StyledContent>
+                    <RecordImg src={recordIcon}></RecordImg>
+                    <ContentP>Understanding Long strangle</ContentP>
+                  </StyledContent>
+                  <StyledContent>
+                    <RecordImg src={recordIcon}></RecordImg>
+                    <ContentP>
+                      Short straddle for neutral market conditions
+                    </ContentP>
+                  </StyledContent>
+                  <StyledContent>
+                    <RecordImg src={recordIcon}></RecordImg>
+                    <ContentP>
+                      Short strangle for neutral market conditions
+                    </ContentP>
+                  </StyledContent>
+                  <StyledContent>
+                    <RecordImg src={recordIcon}></RecordImg>
+                    <ContentP>Advanced short straddle with hedges</ContentP>
+                  </StyledContent>
+                  <StyledContent>
+                    <RecordImg src={recordIcon}></RecordImg>
+                    <ContentP>
+                      Eliminating the risk of short strangle with iron condor
+                    </ContentP>
+                  </StyledContent>
+                </Content>
+              )}
+            </DropDownSection>
+            <DropDownSection
+              onClick={() => {
+                showModule("ten");
+              }}
+            >
+              <Module
                 onClick={() => {
                   showModule("ten");
                 }}
               >
-                <Module
+                <StyledP>Bonus lecture</StyledP>
+                <AiOutlineRight
                   onClick={() => {
                     showModule("ten");
                   }}
-                >
-                  <StyledP>Bonus lecture</StyledP>
-                  <AiOutlineRight
-                    onClick={() => {
-                      showModule("ten");
-                    }}
-                  />
-                </Module>
-                {value === "ten" && (
-                  <Content>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>
-                        Understanding the importance of Open Interest
-                      </ContentP>
-                    </StyledContent>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Practical tips for successful trading</ContentP>
-                    </StyledContent>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Conclusion</ContentP>
-                    </StyledContent>
-                    <StyledContent>
-                      <RecordImg src={recordIcon}></RecordImg>
-                      <ContentP>Bonus- Concept of short selling</ContentP>
-                    </StyledContent>
-                  </Content>
-                )}
-              </DropDownSection>
-            </AccordianSection>
-          </CourseContents>
-        )}
+                />
+              </Module>
+              {value === "ten" && (
+                <Content>
+                  <StyledContent>
+                    <RecordImg src={recordIcon}></RecordImg>
+                    <ContentP>
+                      Understanding the importance of Open Interest
+                    </ContentP>
+                  </StyledContent>
+                  <StyledContent>
+                    <RecordImg src={recordIcon}></RecordImg>
+                    <ContentP>Practical tips for successful trading</ContentP>
+                  </StyledContent>
+                  <StyledContent>
+                    <RecordImg src={recordIcon}></RecordImg>
+                    <ContentP>Conclusion</ContentP>
+                  </StyledContent>
+                  <StyledContent>
+                    <RecordImg src={recordIcon}></RecordImg>
+                    <ContentP>Bonus- Concept of short selling</ContentP>
+                  </StyledContent>
+                </Content>
+              )}
+            </DropDownSection>
+          </AccordianSection>
+        </CourseContents>
       </CourseContent>
       <ContactUsDiv>
         <ContactUs />
@@ -812,10 +708,12 @@ const StyledHeader = styled.div`
 const StyledCardContainer = styled.div`
   display: flex;
   gap: 6rem;
-  width: 100%;
-  justify-content: center;
+  width: 98rem;
+  justify-content: flex-start;
   padding: 0 2rem;
   margin-bottom: 2rem;
+  margin: 2rem auto;
+  margin-bottom: 4rem;
   @media screen and (max-width: 968px) {
     flex-direction: column;
     padding: 2rem;
@@ -823,11 +721,6 @@ const StyledCardContainer = styled.div`
   }
 `;
 const StyledFirstCard = styled.div`
-  display: flex;
-  width: auto;
-  justify-content: center;
-`;
-const StyledSecondCard = styled.div`
   display: flex;
   width: auto;
   justify-content: center;
