@@ -47,7 +47,7 @@ const TradersMentorship = () => {
                 </div>
               </StyledButton>
             </StyledButtonDiv>
-            <CardH3>Learn about stock market trading from A-Z</CardH3>
+            <CardH3>Learn about stock market trading from A - Z (தமிழ்)</CardH3>
             <CardPara>
               Learn everything from basic to advanced concepts. This will cover
               trading in Equity and Futures & Options market

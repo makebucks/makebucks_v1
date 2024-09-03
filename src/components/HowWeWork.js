@@ -789,24 +789,5 @@ const DropDownSection = styled.div`
     width: 100%;
   }
 `;
-const JoinPara = styled.p`
-  font-size: 2rem;
-  color: #474748;
-  text-align: center;
-  width: 49%;
-  padding: 3rem 0;
-  @media screen and (max-width: 800px) {
-    width: 88%;
-    padding: 0;
-    font-size: 18px;
-    margin: 2rem 0 1rem 0;
-  }
-  @media screen and (max-width: 500px) {
-    width: 90%;
-    padding: 0;
-    font-size: 12px;
-    margin-top: 2rem;
-  }
-`;
 
 export default HowWeWork;
