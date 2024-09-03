@@ -548,10 +548,6 @@ const HowWeWork = () => {
             </CardContent>
           </Card>
         </CardHolder>
-        <JoinPara>
-          We have designed the module in such a way that you will learn
-          everything from absolute scratch to highly skilled advanced trader.
-        </JoinPara>
 
         <BackDropImg src={backImg}></BackDropImg>
       </HWWContainer>

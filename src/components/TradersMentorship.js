@@ -87,7 +87,7 @@ const TradersMentorship = () => {
             <BottomButtons>
               <a
                 className="tagmon"
-                href="https://learn.makebucks.in/l/456472bb0d"
+                href="https://learn.makebucks.in/l/e61bf2bfff"
                 target="_blank"
                 rel="noreferrer"
               >
