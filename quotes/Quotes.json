@@ -1,0 +1,157 @@
+const Datas = [
+  {
+    id: "01",
+    quote: "Never, ever argue with your trading system",
+    author: "- Michael Covel "
+  },
+  {
+    id: "02",
+    quote: "Do not anticipate and move without market confirmation - being a little late in your trade is your insurance that you are right or wrong.",
+    author: "- Jesse Livermore "
+  },
+  {
+    id: "03",
+    quote: "Most traders take a good system and destroy it by trying to make it into a perfect system.",
+    author: "- Robert Prechter"
+  },
+  {
+    id: "04",
+    quote: "Sheer will and determination is no substitute for something that actually works.",
+    author: "- Jason Klatt"
+  },
+  {
+    id: "05",
+    quote: "The goal of a successful trader is to make the best trades. Money is secondary.",
+    author: "- Alexander Elder"
+  },
+  {
+    id: "10",
+    quote: "If most traders would learn to sit on their hands 50 percent of the time, they would make a lot more money.",
+    author: "- Bill Lipschutz"
+  },
+  {
+    id: "11",
+    quote: "There is a time to go long, a time to go short and a time to go fishing.",
+    author: " - Jesse Livermore"
+  },
+  {
+    id: "12",
+    quote: "The core problem, however, is the need to fit markets into a style of trading rather than finding ways to trade that fit with market behaviour",
+    author: "- Brett Steenbarger"
+  },
+  {
+    id: "13",
+    quote: "Novice Traders trade 5 to 10 times too big. They are taking 5 to 10 percent risk, on a trade they should be taking 1 to 2 percent risk on.",
+    author: "- Bruce Kovner"
+  },
+  {
+    id: "14",
+    quote: "Are you willing to lose money on a trade? If not, then don't take it. You can only win if you're not afraid to lose. And you can only do that if you truly accept the risks in front of you.",
+    author: "- Sami Abusaad"
+  },
+  {
+    id: "15",
+    quote: "The elements of good trading are (1) cutting losses, (2) cutting losses, and (3) cutting losses. If you can follow these three rules, you may have a chance",
+    author: "- Ed Seykota"
+  },
+  {
+    id: "16",
+    quote: "Accepting losses is the most important single investment device to ensure the safety of capital.",
+    author: "- Gerald M. Loeb"
+  },
+  {
+    id: "17",
+    quote: "Don’t worry about what the markets are going to do, worry about what you are going to do in response to the markets",
+    author: "- Michael Carr"
+  },
+  {
+    id: "18",
+    quote: "You don't need to be a rocket scientist. Investing is not a game where the guy with the 160 IQ beats the guy with 130 IQ",
+    author: "- Warren Buffet"
+  },
+  {
+    id: "19",
+    quote: "We simply attempt to be fearful when others are greedy and to be greedy only when others are fearful.",
+    author: "- Warren Buffet"
+  },
+  {
+    id: "20",
+    quote: "The goal of a successful trader is to make the best trades. Money is secondary",
+    author: "- Alexander Elder"
+  },
+  {
+    id: "21",
+    quote: "The four most dangerous words in investing are: This time it’s different.",
+    author: "– Sir John Templeton"
+  },
+  {
+    id: "22",
+    quote: "The stock market is filled with individuals who know the price of everything, but the value of nothing.",
+    author: "- Philip Fisher"
+  },
+  {
+    id: "23",
+    quote: "The single most powerful asset we all have is our mind. If it is trained well, it can create enormous wealth.",
+    author: "- Robert Kiyosaki"
+  },
+  {
+    id: "24",
+    quote: "I just wait until there is money lying in the corner, and all I have to do is go over there and pick it up. I do nothing in the meantime.",
+    author: "- Jim Rogers"
+  },
+  {
+    id: "25",
+    quote: "If most traders would learn to sit on their hands 50 percent of the time, they would make a lot more money.",
+    author: "- Bill Lipschutz"
+  },
+  {
+    id: "26",
+    quote: "Trading without a diary is like shaving without a mirror",
+    author: "- Dr. Alexander Elder"
+  },
+  {
+    id: "27",
+    quote: "It’s not what we do occasionally that shapes our lives. It’s what we do consistently.",
+    author: "– Anthony Robbins"
+  },
+  {
+    id: "28",
+    quote: "Limit your size in any position so that fear does not become the prevailing instinct guiding your judgment.",
+    author: "– Joe Vidich"
+  },
+  {
+    id: "29",
+    quote: "Do more of what works and less of what doesn’t.",
+    author: "– Steve Clark"
+  },
+  {
+    id: "30",
+    quote: "Trading doesn't just reveal your character, it also builds it if you stay in the game long enough.",
+    author: "― Yvan Byeajee"
+  },
+  {
+    id: "31",
+    quote: "Never invest in any idea you can’t illustrate with a crayon.",
+    author: "– Peter Lynch"
+  },
+  {
+    id: "32",
+    quote: "Trading is very competitive and you have to be able to handle getting your butt kicked.",
+    author: "– Paul Tudor Jones"
+  },
+  {
+    id: "33",
+    quote: "The single most important reason that people lose money in the financial markets is that they don’t cut their losses short.",
+    author: "– Victor Sperandeo"
+  },
+  {
+    id: "34",
+    quote: "If you don’t work very hard, it is extremely unlikely that you will be a good trader.",
+    author: "– Bruce Kovner"
+  },
+  {
+    id: "35",
+    quote: "You should always have a worst case point. The only choice should be to get out quicker.",
+    author: "– Richard Dennis"
+  },
+]
