@@ -163,6 +163,7 @@ const StyledNavBar = styled.nav`
     }
     .responsive_nav {
       transform: none;
+      z-index:999;
     }
   }
   //...........Responsive phone 550px.........//
