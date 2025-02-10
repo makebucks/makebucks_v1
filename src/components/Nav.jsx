@@ -21,7 +21,7 @@ const NavBar = () => {
           <NavLink to="/">Home</NavLink>
         </li>
         <li>
-          <NavLink to="/ourapp">Our app</NavLink>
+          <NavLink to="/our-app">Our app</NavLink>
         </li>
         <li>
           <Link to="contactMe" smooth={true} offset={-50} duration={500}>
@@ -163,7 +163,7 @@ const StyledNavBar = styled.nav`
     }
     .responsive_nav {
       transform: none;
-      z-index:999;
+      z-index: 999;
     }
   }
   //...........Responsive phone 550px.........//

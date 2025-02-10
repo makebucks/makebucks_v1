@@ -1,6 +1,10 @@
 import React from "react";
 //Router
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Navigate,
+} from "react-router-dom";
 //Globalstyle
 import GlobalStyle from "./components/GlobalStyle";
 //pages
@@ -20,12 +24,16 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "ourapp",
+        path: "our-app",
         element: <OurApp />,
       },
       {
         path: "users",
         element: <Users />,
+      }, // Catch-all route to handle invalid URLs and redirect to home
+      {
+        path: "*",
+        element: <Navigate to="/" />,
       },
     ],
   },
