@@ -98,7 +98,7 @@ const AfforadablePricing = () => {
               <div className="cta">
                 <a
                   href="#"
-                  onClick={(e) => e.preventDefault()
+                  onClick={(e) => e.preventDefault()}
                   rel="noreferrer"
                 >
                   <button>Enroll now</button>
