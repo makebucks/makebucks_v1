@@ -83,7 +83,6 @@ const Footer = () => {
                   <div className="icon youtube">
                     <a
                       href="https://makebucks.in/"
-                      target="_blank"
                       rel="noreferrer"
                     >
                       <img src={yt} alt="youtube-icon" />
