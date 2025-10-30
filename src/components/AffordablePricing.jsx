@@ -97,8 +97,8 @@ const AfforadablePricing = () => {
               </div>
               <div className="cta">
                 <a
-                  href="#"
-                  onClick={(e) => e.preventDefault()}
+                  href="https://makebucks.in/"
+                  target="_blank"
                   rel="noreferrer"
                 >
                   <button>Enroll now</button>
