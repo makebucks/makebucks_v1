@@ -82,8 +82,8 @@ const Footer = () => {
                   </div>
                   <div className="icon youtube">
                     <a
-                      href="#"
-                      onClick={(e) => e.preventDefault()}
+                      href="https://makebucks.in/"
+                      target="_blank"
                       rel="noreferrer"
                     >
                       <img src={yt} alt="youtube-icon" />
