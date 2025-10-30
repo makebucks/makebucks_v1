@@ -47,8 +47,8 @@ const AboutUs = () => {
             <div className="our-youtube">
               <h3>Our Youtube.</h3>
               <a
-  href="#"
-  onClick={(e) => e.preventDefault()}
+  href="https://makebucks.in/"
+  target="_blank"
   rel="noreferrer"
 >
 
