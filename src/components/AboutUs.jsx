@@ -47,10 +47,11 @@ const AboutUs = () => {
             <div className="our-youtube">
               <h3>Our Youtube.</h3>
               <a
-                href=""
-                target="_blank"
-                rel="noreferrer"
-              >
+  href="#"
+  onClick={(e) => e.preventDefault()}
+  rel="noreferrer"
+>
+
                 <button>View channel </button>
               </a>
             </div>
