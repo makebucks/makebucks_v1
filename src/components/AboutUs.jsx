@@ -47,7 +47,7 @@ const AboutUs = () => {
             <div className="our-youtube">
               <h3>Our Youtube.</h3>
               <a
-                href="https://www.youtube.com/@makeBucks-in"
+                href=""
                 target="_blank"
                 rel="noreferrer"
               >
