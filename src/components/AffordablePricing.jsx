@@ -98,7 +98,6 @@ const AfforadablePricing = () => {
               <div className="cta">
                 <a
                   href="https://makebucks.in/"
-                  target="_blank"
                   rel="noreferrer"
                 >
                   <button>Enroll now</button>
