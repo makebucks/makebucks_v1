@@ -82,7 +82,7 @@ const Footer = () => {
                   </div>
                   <div className="icon youtube">
                     <a
-                      href="https://www.youtube.com/@makeBucks-in"
+                      href=""
                       rel="noreferrer"
                       target="_blank"
                     >
