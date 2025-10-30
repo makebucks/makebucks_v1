@@ -48,7 +48,6 @@ const AboutUs = () => {
               <h3>Our Youtube.</h3>
               <a
   href="https://makebucks.in/"
-  target="_blank"
   rel="noreferrer"
 >
 
